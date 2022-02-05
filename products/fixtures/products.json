@@ -1,0 +1,2088 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "1980",
+      "name": "Black Wood & Fabric",
+      "description": "W 77\" / D 33\" / H 32\" / 125 lb.",
+      "price": 939.99,
+      "category": 1,
+      "image_url": "/media/1980modern-sofas.jpg",
+      "image": "1980modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "1366",
+      "name": "Star White Polyester",
+      "description": "W 35.5\" / D 82\" / H 30.5\" / 122 lb.",
+      "price": 987.99,
+      "category": 1,
+      "image_url": "/media/1366modern-sofas.jpg",
+      "image": "1366modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "2149",
+      "name": "Black Sustainable and Organic Materials",
+      "description": "W 74.4\" / D 33.5\" / H 33.5\" / 145 lb.",
+      "price": 807.99,
+      "category": 1,
+      "image_url": "/media/2149modern-sofas.jpg",
+      "image": "2149modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "4142",
+      "name": "Black Chromed Steel",
+      "description": "W 76\" / D 0\" / H 26\" / 144 lb.",
+      "price": 911.99,
+      "category": 1,
+      "image_url": "/media/4142modern-sofas.jpg",
+      "image": "4142modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "2036",
+      "name": "Mocha High Resilience 2.2 Density Foam  Foam Encased Wood Frame",
+      "description": "W 89\" / D 41\" / H 41\" / 235 lb.",
+      "price": 965.99,
+      "category": 1,
+      "image_url": "/media/2036modern-sofas.jpg",
+      "image": "2036modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "2047",
+      "name": "Brown Wood",
+      "description": "W 87\" / D 37\" / H 37\" / 130 lb.",
+      "price": 969.99,
+      "category": 1,
+      "image_url": "/media/2047modern-sofas.jpg",
+      "image": "2047modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "1988",
+      "name": "Gray Fabric Tweed",
+      "description": "W 89\" / D 35.9\" / H 32.3\" / 144 lb.",
+      "price": 968.99,
+      "category": 1,
+      "image_url": "/media/1988modern-sofas.jpg",
+      "image": "1988modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "1458",
+      "name": "Black  Red Bonded Leather  Wood",
+      "description": "W 72\" / D 41\" / H 31\" / 339 lb.",
+      "price": 898.99,
+      "category": 1,
+      "image_url": "/media/1458modern-sofas.jpg",
+      "image": "1458modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "1467",
+      "name": "White Wood  Fabric",
+      "description": "W 86\" / D 35\" / H 31\" / 150 lb.",
+      "price": 862.99,
+      "category": 1,
+      "image_url": "/media/1467modern-sofas.jpg",
+      "image": "1467modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "1798",
+      "name": "Red Wood  Fabric",
+      "description": "W 82\" / D 29\" / H 30\" / 100 lb.",
+      "price": 805.99,
+      "category": 1,
+      "image_url": "/media/1798modern-sofas.jpg",
+      "image": "1798modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "2003",
+      "name": "Choco Brown Aniline Leather Leather",
+      "description": "Choco Brown Aniline Leather Leather",
+      "price": 955.99,
+      "category": 1,
+      "image_url": "/media/2003modern-sofas.jpg",
+      "image": "2003modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "2031",
+      "name": "Beige Fabric  Steel",
+      "description": "W 86\" / D 36\" / H 35\" / 118 lb.",
+      "price": 925.99,
+      "category": 1,
+      "image_url": "/media/2031modern-sofas.jpg",
+      "image": "2031modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "1463",
+      "name": "White Wood & Fabric",
+      "description": "W 77\" / D 33\" / H 32\" / 125 lb.",
+      "price": 944.99,
+      "category": 1,
+      "image_url": "/media/1463modern-sofas.jpg",
+      "image": "1463modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "2133",
+      "name": "Beige Granite leather/ V215",
+      "description": "W 80.25\" / D 36.5\" / H 31.5\" / 193.6 lb.",
+      "price": 971.99,
+      "category": 1,
+      "image_url": "/media/2133modern-sofas.jpg",
+      "image": "2133modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "2006",
+      "name": "White Foam  Wood Legs  Pvc",
+      "description": "White Foam  Wood Legs  Pvc",
+      "price": 863.99,
+      "category": 1,
+      "image_url": "/media/2006modern-sofas.jpg",
+      "image": "2006modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "1445",
+      "name": "Beige Wood  Fabric",
+      "description": "W 73\" / D 34\" / H 35\" / 99 lb.",
+      "price": 843.99,
+      "category": 1,
+      "image_url": "/media/1445modern-sofas.jpg",
+      "image": "1445modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "2002",
+      "name": "Urban Pebble/Ash Twill",
+      "description": "W 86.5\" / D 31.5\" / H 27.5\" / 11.25 lb.",
+      "price": 898.99,
+      "category": 1,
+      "image_url": "/media/2002modern-sofas.jpg",
+      "image": "2002modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "2066",
+      "name": "Black Leatherette  Stainless Steel",
+      "description": "Black Leatherette  Stainless Steel",
+      "price": 848.99,
+      "category": 1,
+      "image_url": "/media/2066modern-sofas.jpg",
+      "image": "2066modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "4836",
+      "name": "Gray Polyester",
+      "description": "W 35.5\" / D 82\" / H 30.5\" / 122 lb.",
+      "price": 951.99,
+      "category": 1,
+      "image_url": "/media/4836modern-sofas.jpg",
+      "image": "4836modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "1612",
+      "name": "Light Brown Italian Leather  Black Lacquered Steel Frame  Stainless Steel  High Density Foam",
+      "description": "W 52.75\" / D 33.86\" / H 33.07\" / 90.04 lb.",
+      "price": 959.99,
+      "category": 1,
+      "image_url": "/media/1612modern-sofas.jpg",
+      "image": "1612modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "1981",
+      "name": "Oatmeal Linen",
+      "description": "W 131.1\" / D 95.1\" / H 33\" / 279 lb.",
+      "price": 844.99,
+      "category": 1,
+      "image_url": "/media/1981modern-sofas.jpg",
+      "image": "1981modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "1397",
+      "name": "Black Leather  Leather Match  Metal Legs  Wood Arms",
+      "description": "W 37\" / D 86\" / H 36\" / 155 lb.",
+      "price": 985.99,
+      "category": 1,
+      "image_url": "/media/1397modern-sofas.jpg",
+      "image": "1397modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "1989",
+      "name": "Black Aniline Leather Aniline Leather",
+      "description": "Black Aniline Leather Aniline Leather",
+      "price": 857.99,
+      "category": 1,
+      "image_url": "/media/1989modern-sofas.jpg",
+      "image": "1989modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "1380",
+      "name": "Gray Wood & Fabric",
+      "description": "W 78\" / D 31\" / H 26.5\" / 150 lb.",
+      "price": 956.99,
+      "category": 1,
+      "image_url": "/media/1380modern-sofas.jpg",
+      "image": "1380modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "1503",
+      "name": "White Foam  Leather  Stainless Steel",
+      "description": "W 81\" / D 33\" / H 31.5\" / 124 lb.",
+      "price": 933.99,
+      "category": 1,
+      "image_url": "/media/1503modern-sofas.jpg",
+      "image": "1503modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "2023",
+      "name": "Seat: Dark Brown Aniline Leather Leather  Foam  Stainless Steel",
+      "description": "W 38.6\" / D 77.96\" / H 16.1\" / 68.3 lb.",
+      "price": 840.99,
+      "category": 1,
+      "image_url": "/media/2023modern-sofas.jpg",
+      "image": "2023modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "2001",
+      "name": "Gray Linen",
+      "description": "W 90.5\" / D 37.5\" / H 34.5\" / 149.9 lb.",
+      "price": 870.99,
+      "category": 1,
+      "image_url": "/media/2001modern-sofas.jpg",
+      "image": "2001modern-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "4212",
+      "name": "Light Gray Hallingdal 65  Wood",
+      "description": "W 70.9\" / D 27.2\" / H 26\" / 2.2 lb.",
+      "price": 938.99,
+      "category": 2,
+      "image_url": "/media/4212scandinavian-sofas.jpg",
+      "image": "4212scandinavian-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "4215",
+      "name": "Cream Solid Hardwood Frame  Stain Resistant Microfiber Or Textured Poly-Blend Fabrics",
+      "description": "W 80\" / D 37\" / H 35\" / 120 lb.",
+      "price": 932.99,
+      "category": 2,
+      "image_url": "/media/4215scandinavian-sofas.jpg",
+      "image": "4215scandinavian-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "4213",
+      "name": "Gray Wood/Marble",
+      "description": "W 75\" / D 33\" / H 34\" / 100 lb.",
+      "price": 997.99,
+      "category": 2,
+      "image_url": "/media/4213scandinavian-sofas.jpg",
+      "image": "4213scandinavian-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "2236",
+      "name": "Green Apple Solid Hardwood Frame  Stain Resistant Microfiber Or Textured Poly-Blend Fabrics",
+      "description": "W 72\" / D 35\" / H 32\" / 120 lb.",
+      "price": 939.99,
+      "category": 2,
+      "image_url": "/media/2236scandinavian-sofas.jpg",
+      "image": "2236scandinavian-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "2603",
+      "name": "Chocolate Fabric  Steel",
+      "description": "W 87\" / D 36\" / H 35\" / 106 lb.",
+      "price": 980.99,
+      "category": 2,
+      "image_url": "/media/2603scandinavian-sofas.jpg",
+      "image": "2603scandinavian-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "4216",
+      "name": "Blueberry Solid Hardwood Frame  Stain Resistant Microfiber Or Textured Poly-Blend Fabrics",
+      "description": "W 72\" / D 35\" / H 32\" / 120 lb.",
+      "price": 843.99,
+      "category": 2,
+      "image_url": "/media/4216scandinavian-sofas.jpg",
+      "image": "4216scandinavian-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "3108",
+      "name": "Various Wood and Fabric",
+      "description": "Various Wood and Fabric",
+      "price": 954.99,
+      "category": 7,
+      "image_url": "/media/3108traditional-sofas.jpg",
+      "image": "3108traditional-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "1739",
+      "name": "Walnut Wood",
+      "description": "Walnut Wood",
+      "price": 958.99,
+      "category": 7,
+      "image_url": "/media/1739traditional-sofas.jpg",
+      "image": "1739traditional-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "3427",
+      "name": "Brown Polyester & Bonded Leather",
+      "description": "W 90\" / D 37\" / H 41\" / 120 lb.",
+      "price": 829.99,
+      "category": 7,
+      "image_url": "/media/3427traditional-sofas.jpg",
+      "image": "3427traditional-sofas.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": "7460",
+      "name": "Light Gray/Wenge Leatherette  Solid Rubber Wood",
+      "description": "W 18\" / D 23\" / H 35\" / 17 lb.",
+      "price": 184.99,
+      "category": 7,
+      "image_url": "/media/7460modern-dining-chairs.jpg",
+      "image": "7460modern-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": "7578",
+      "name": "Green Chrome and Fabric",
+      "description": "W 23.5\" / D 29\" / H 44\" / 55 lb.",
+      "price": 184.99,
+      "category": 7,
+      "image_url": "/media/7578modern-armchairs-and-accent-chairs.jpg",
+      "image": "7578modern-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sku": "7605",
+      "name": "Dark Red Wood",
+      "description": "W 19.5\" / D 29.5\" / H 40.5\" / 37 lb.",
+      "price": 187.99,
+      "category": 7,
+      "image_url": "/media/7605modern-dining-chairs.jpg",
+      "image": "7605modern-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sku": "21457",
+      "name": "Light Grey Linen Fabric  Back - 100% Polyester",
+      "description": "W 31.3\" / D 31.9\" / H 30.7\" / 60 lb.",
+      "price": 101.99,
+      "category": 8,
+      "image_url": "/media/21457scandinavian-armchairs-and-accent-chairs.jpg",
+      "image": "21457scandinavian-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "sku": "21913",
+      "name": "Sailcloth Shell Cushion Sunbrella Fabric and Quick Dry Foam Core",
+      "description": "W 32\" / D 90\" / H 11.75\" / 16 lb.",
+      "price": 107.99,
+      "category": 8,
+      "image_url": "/media/21913scandinavian-indoor-chaise-lounge-chairs.jpg",
+      "image": "21913scandinavian-indoor-chaise-lounge-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "sku": "22093",
+      "name": "Black fabric  wood",
+      "description": "W 28.7\" / D 53.1\" / H 48\" / 3.7 lb.",
+      "price": 194.99,
+      "category": 8,
+      "image_url": "/media/22093scandinavian-recliner-chairs.jpg",
+      "image": "22093scandinavian-recliner-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "sku": "12475",
+      "name": "Oak Wood",
+      "description": "W 23.25\" / D 24\" / H 41.25\" / 99.22 lb.",
+      "price": 151.99,
+      "category": 3,
+      "image_url": "/media/12475traditional-dining-chairs.jpg",
+      "image": "12475traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "sku": "13113",
+      "name": "Espresso Fabric  Foam  Bentwood",
+      "description": "W 26\" / D 26\" / H 45\" / 57 lb.",
+      "price": 93.99,
+      "category": 3,
+      "image_url": "/media/13113traditional-dining-chairs.jpg",
+      "image": "13113traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "sku": "11211",
+      "name": "Black Wood  Fabric",
+      "description": "W 22.91\" / D 24.6\" / H 39.96\" / 3.03 lb.",
+      "price": 106.99,
+      "category": 3,
+      "image_url": "/media/11211traditional-dining-chairs.jpg",
+      "image": "11211traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "sku": "11701",
+      "name": "Brown Leather",
+      "description": "W 30\" / D 38.5\" / H 34\" / 95 lb.",
+      "price": 151.99,
+      "category": 3,
+      "image_url": "/media/11701traditional-armchairs-and-accent-chairs.jpg",
+      "image": "11701traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "sku": "10730",
+      "name": "Cherry Mahogany",
+      "description": "W 21\" / D 21\" / H 37\" / 30 lb.",
+      "price": 108.99,
+      "category": 3,
+      "image_url": "/media/10730traditional-armchairs-and-accent-chairs.jpg",
+      "image": "10730traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "sku": "13761",
+      "name": "Cream Fabric",
+      "description": "W 27.5\" / D 0\" / H 28.3\" / 105 lb.",
+      "price": 115.99,
+      "category": 3,
+      "image_url": "/media/13761traditional-armchairs-and-accent-chairs.jpg",
+      "image": "13761traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "sku": "9889",
+      "name": "Coco Vintage Leather  Wood",
+      "description": "W 22\" / D 23\" / H 36\" / 40 lb.",
+      "price": 98.99,
+      "category": 3,
+      "image_url": "/media/9889traditional-dining-chairs.jpg",
+      "image": "9889traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "sku": "13237",
+      "name": "Burl 03 Wood  Upholstery",
+      "description": "W 52\" / D 36\" / H 35\" / 161 lb.",
+      "price": 144.99,
+      "category": 3,
+      "image_url": "/media/13237traditional-armchairs-and-accent-chairs.jpg",
+      "image": "13237traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "sku": "8491",
+      "name": "Mocha Bonded Leather",
+      "description": "W 41\" / D 38\" / H 30\" / 50 lb.",
+      "price": 123.99,
+      "category": 3,
+      "image_url": "/media/8491traditional-armchairs-and-accent-chairs.jpg",
+      "image": "8491traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "sku": "11826",
+      "name": "Taupe  Wood Color  Cherry Mahogany Wood Content: Birchwood: Upholstery Content: 100% Linen",
+      "description": "W 23.6\" / D 28.7\" / H 34.6\" / 48.4 lb.",
+      "price": 159.99,
+      "category": 3,
+      "image_url": "/media/11826traditional-armchairs-and-accent-chairs.jpg",
+      "image": "11826traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "sku": "12487",
+      "name": "Saltbox White FabricFabric",
+      "description": "W 24.5\" / D 22.38\" / H 41.88\" / 37 lb.",
+      "price": 108.99,
+      "category": 3,
+      "image_url": "/media/12487traditional-dining-chairs.jpg",
+      "image": "12487traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "sku": "9923",
+      "name": "Nutmeg Light Oak and Light Oak Eco-Friendly Malaysian Oak",
+      "description": "W 21.5\" / D 24\" / H 41\" / 0 oz.",
+      "price": 185.99,
+      "category": 3,
+      "image_url": "/media/9923traditional-dining-chairs.jpg",
+      "image": "9923traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "sku": "13409",
+      "name": "Dark Gray Solid Birch Wood Frame  100% Polyester  038 Flat Nailheads",
+      "description": "W 33.4\" / D 33.8\" / H 41.7\" / 83.6 lb.",
+      "price": 110.99,
+      "category": 3,
+      "image_url": "/media/13409traditional-armchairs-and-accent-chairs.jpg",
+      "image": "13409traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+      "sku": "9843",
+      "name": "White Paint oak/down/linen blend fabric",
+      "description": "W 28\" / D 76\" / H 36\" / 44 lb.",
+      "price": 119.99,
+      "category": 3,
+      "image_url": "/media/9843traditional-armchairs-and-accent-chairs.jpg",
+      "image": "9843traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+      "sku": "10477",
+      "name": "Roma Travertine 100% Polyester",
+      "description": "W 27.38\" / D 20\" / H 18.25\" / 30.84 lb.",
+      "price": 165.99,
+      "category": 3,
+      "image_url": "/media/10477traditional-armchairs-and-accent-chairs.jpg",
+      "image": "10477traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+      "sku": "10290",
+      "name": "Beige Hardwood Solids and Cherry Veneers with Fabric and Raffia Accents",
+      "description": "W 42.5\" / D 39\" / H 36.5\" / 68 lb.",
+      "price": 152.99,
+      "category": 3,
+      "image_url": "/media/10290traditional-armchairs-and-accent-chairs.jpg",
+      "image": "10290traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+      "sku": "13481",
+      "name": "Gold 100% Linen Upholstery",
+      "description": "W 34\" / D 39\" / H 31\" / 250 lb.",
+      "price": 161.99,
+      "category": 3,
+      "image_url": "/media/13481traditional-armchairs-and-accent-chairs.jpg",
+      "image": "13481traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+      "sku": "10857",
+      "name": "White Bonded Leather",
+      "description": "W 28\" / D 28\" / H 29\" / 66 lb.",
+      "price": 176.99,
+      "category": 3,
+      "image_url": "/media/10857traditional-armchairs-and-accent-chairs.jpg",
+      "image": "10857traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+      "sku": "10554",
+      "name": "Tan Cushion And Warm Brown 90% Birch  10% Fabric",
+      "description": "W 24\" / D 27\" / H 39\" / 20.94 lb.",
+      "price": 197.99,
+      "category": 3,
+      "image_url": "/media/10554traditional-dining-chairs.jpg",
+      "image": "10554traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+      "sku": "10150",
+      "name": "Gray Grey 100% Belgium Style Linen",
+      "description": "W 32\" / D 34\" / H 31.25\" / 50.6 lb.",
+      "price": 119.99,
+      "category": 3,
+      "image_url": "/media/10150traditional-armchairs-and-accent-chairs.jpg",
+      "image": "10150traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+      "sku": "10459",
+      "name": "Grey Hardwood",
+      "description": "Grey Hardwood",
+      "price": 197.99,
+      "category": 3,
+      "image_url": "/media/10459traditional-dining-chairs.jpg",
+      "image": "10459traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+      "sku": "12579",
+      "name": "Burl 02 Wood  Upholstery",
+      "description": "W 27\" / D 27\" / H 44\" / 35 lb.",
+      "price": 184.99,
+      "category": 3,
+      "image_url": "/media/12579traditional-armchairs-and-accent-chairs.jpg",
+      "image": "12579traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+      "sku": "10629",
+      "name": "Beige Fabric",
+      "description": "W 33.46\" / D 33.46\" / H 36.22\" / 39.68 lb.",
+      "price": 157.99,
+      "category": 3,
+      "image_url": "/media/10629traditional-armchairs-and-accent-chairs.jpg",
+      "image": "10629traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+      "sku": "10104",
+      "name": "Black and Brown Mahogany Solids  Oak Veneers and Engineered Wood",
+      "description": "W 18\" / D 23.75\" / H 40\" / 51 lb.",
+      "price": 147.99,
+      "category": 3,
+      "image_url": "/media/10104traditional-dining-chairs.jpg",
+      "image": "10104traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+      "sku": "9628",
+      "name": "Slate Gray Recycled Plastic",
+      "description": "W 34\" / D 31\" / H 40\" / 68 lb.",
+      "price": 103.99,
+      "category": 3,
+      "image_url": "/media/9628traditional-rocking-chairs.jpg",
+      "image": "9628traditional-rocking-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+      "sku": "10123",
+      "name": "Nutmeg Light Oak and Light Oak Eco-Friendly Malaysian Oak",
+      "description": "W 20.5\" / D 22\" / H 41\" / 44.62 lb.",
+      "price": 181.99,
+      "category": 3,
+      "image_url": "/media/10123traditional-dining-chairs.jpg",
+      "image": "10123traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+      "sku": "13236",
+      "name": "Brown Wood  Upholstery and Cotton Fill",
+      "description": "W 23\" / D 23.5\" / H 27\" / 15 lb.",
+      "price": 160.99,
+      "category": 3,
+      "image_url": "/media/13236traditional-armchairs-and-accent-chairs.jpg",
+      "image": "13236traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+      "sku": "10777",
+      "name": "Biker Tan Top Grain Leather  Oak",
+      "description": "Biker Tan Top Grain Leather  Oak",
+      "price": 102.99,
+      "category": 3,
+      "image_url": "/media/10777traditional-dining-chairs.jpg",
+      "image": "10777traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+      "sku": "9629",
+      "name": "Brown Leather",
+      "description": "W 37.25\" / D 35.5\" / H 41.5\" / 97 lb.",
+      "price": 124.99,
+      "category": 3,
+      "image_url": "/media/9629traditional-recliner-chairs.jpg",
+      "image": "9629traditional-recliner-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+      "sku": "11169",
+      "name": "Dark Brown Wood  Fabric",
+      "description": "Dark Brown Wood  Fabric",
+      "price": 96.99,
+      "category": 3,
+      "image_url": "/media/11169traditional-dining-chairs.jpg",
+      "image": "11169traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+      "sku": "13746",
+      "name": "Gray 100% Polyester  Solid Eucalyptus Wood Frame  Solid Rubber Wood Legs  Solid Eucal",
+      "description": "W 28\" / D 38\" / H 34\" / 44 lb.",
+      "price": 170.99,
+      "category": 3,
+      "image_url": "/media/13746traditional-armchairs-and-accent-chairs.jpg",
+      "image": "13746traditional-armchairs-and-accent-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+      "sku": "9689",
+      "name": "White and Brown Hardwood Solids and Engineered Wood",
+      "description": "W 20.75\" / D 17.75\" / H 38\" / 46.3 lb.",
+      "price": 119.99,
+      "category": 3,
+      "image_url": "/media/9689traditional-dining-chairs.jpg",
+      "image": "9689traditional-dining-chairs.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+      "sku": "11916",
+      "name": "Brown Steel  Wood",
+      "description": "W 28\" / D 28\" / H 41\" / 37 lb.",
+      "price": 669.99,
+      "category": 7,
+      "image_url": "/media/11916modern-indoor-pub-and-bistro-tables.jpg",
+      "image": "11916modern-indoor-pub-and-bistro-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+      "sku": "8856",
+      "name": "Black FSC certified  formaldehyde-free wood",
+      "description": "W 20\" / D 16\" / H 16\" / 15 lb.",
+      "price": 340.99,
+      "category": 7,
+      "image_url": "/media/8856modern-side-tables-and-end-tables.jpg",
+      "image": "8856modern-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+      "sku": "10777",
+      "name": "White Polished Stainless Steel  MDF",
+      "description": "W 47\" / D 14\" / H 33.5\" / 44.1 lb.",
+      "price": 639.99,
+      "category": 7,
+      "image_url": "/media/10777modern-console-tables.jpg",
+      "image": "10777modern-console-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+      "sku": "13537",
+      "name": "Chocolate Cherry Birch solids & veneers",
+      "description": "W 16\" / D 16\" / H 30.5\" / 20 lb.",
+      "price": 398.99,
+      "category": 8,
+      "image_url": "/media/13537traditional-side-tables-and-end-tables.jpg",
+      "image": "13537traditional-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+      "sku": "17448",
+      "name": "Black Wood",
+      "description": "W 36\" / D 30\" / H 60\" / 101 lb.",
+      "price": 518.99,
+      "category": 8,
+      "image_url": "/media/17448traditional-dining-tables.jpg",
+      "image": "17448traditional-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 80,
+    "model": "products.product",
+    "fields": {
+      "sku": "16282",
+      "name": "Chrome / Glass Metal Chrome  Glass",
+      "description": "W 31\" / D 11.75\" / H 30\" / 23 lb.",
+      "price": 389.99,
+      "category": 8,
+      "image_url": "/media/16282traditional-side-tables-and-end-tables.jpg",
+      "image": "16282traditional-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 81,
+    "model": "products.product",
+    "fields": {
+      "sku": "17707",
+      "name": "Light Brown Mahogany Veneer",
+      "description": "W 48\" / D 16.5\" / H 34\" / 50.71 lb.",
+      "price": 610.99,
+      "category": 5,
+      "image_url": "/media/17707asian-console-tables.jpg",
+      "image": "17707asian-console-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 82,
+    "model": "products.product",
+    "fields": {
+      "sku": "17960",
+      "name": "White/Off-White Iron",
+      "description": "W 24.7\" / D 24.7\" / H 33\" / 44.3 lb.",
+      "price": 448.99,
+      "category": 5,
+      "image_url": "/media/17960asian-side-tables-and-end-tables.jpg",
+      "image": "17960asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 83,
+    "model": "products.product",
+    "fields": {
+      "sku": "17879",
+      "name": "Gold Leaf Finished Base With Mirrored Glass Top and Bottom Shelf Iron  Mirrored Glass",
+      "description": "W 17.5\" / D 17.5\" / H 21\" / 11 lb.",
+      "price": 342.99,
+      "category": 5,
+      "image_url": "/media/17879asian-side-tables-and-end-tables.jpg",
+      "image": "17879asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 84,
+    "model": "products.product",
+    "fields": {
+      "sku": "17629",
+      "name": "Brown Plantation Teakwood",
+      "description": "W 20\" / D 12\" / H 25\" / 37 lb.",
+      "price": 650.99,
+      "category": 5,
+      "image_url": "/media/17629asian-side-tables-and-end-tables.jpg",
+      "image": "17629asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 85,
+    "model": "products.product",
+    "fields": {
+      "sku": "17750",
+      "name": "Charcoal Gray Wood",
+      "description": "W 18.1\" / D 18.1\" / H 18.3\" / 7 lb.",
+      "price": 496.99,
+      "category": 5,
+      "image_url": "/media/17750asian-side-tables-and-end-tables.jpg",
+      "image": "17750asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 86,
+    "model": "products.product",
+    "fields": {
+      "sku": "17778",
+      "name": "Black MOP Ladies Solid wood",
+      "description": "W 13\" / D 13\" / H 36\" / 23 lb.",
+      "price": 490.99,
+      "category": 5,
+      "image_url": "/media/17778asian-plant-stands-and-telephone-tables.jpg",
+      "image": "17778asian-plant-stands-and-telephone-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 87,
+    "model": "products.product",
+    "fields": {
+      "sku": "17631",
+      "name": "Dark Brown Birch",
+      "description": "W 14\" / D 14\" / H 32\" / 12 lb.",
+      "price": 364.99,
+      "category": 5,
+      "image_url": "/media/17631asian-side-tables-and-end-tables.jpg",
+      "image": "17631asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 88,
+    "model": "products.product",
+    "fields": {
+      "sku": "17956",
+      "name": "Antique Gold Other",
+      "description": "W 18\" / D 18\" / H 25.7\" / 29 lb.",
+      "price": 533.99,
+      "category": 5,
+      "image_url": "/media/17956asian-side-tables-and-end-tables.jpg",
+      "image": "17956asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 89,
+    "model": "products.product",
+    "fields": {
+      "sku": "18275",
+      "name": "Light Brown Mahogany Veneer",
+      "description": "W 48\" / D 17\" / H 34\" / 50.71 lb.",
+      "price": 478.99,
+      "category": 5,
+      "image_url": "/media/18275asian-console-tables.jpg",
+      "image": "18275asian-console-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 90,
+    "model": "products.product",
+    "fields": {
+      "sku": "18107",
+      "name": "Black Ebony Elm",
+      "description": "W 40.5\" / D 17.75\" / H 36\" / 70 lb.",
+      "price": 512.99,
+      "category": 5,
+      "image_url": "/media/18107asian-console-tables.jpg",
+      "image": "18107asian-console-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 91,
+    "model": "products.product",
+    "fields": {
+      "sku": "17630",
+      "name": "Silver  Clear Glass Top Iron with Glass Top",
+      "description": "W 22\" / D 22\" / H 21\" / 46 lb.",
+      "price": 331.99,
+      "category": 5,
+      "image_url": "/media/17630asian-side-tables-and-end-tables.jpg",
+      "image": "17630asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 92,
+    "model": "products.product",
+    "fields": {
+      "sku": "17668",
+      "name": "Washed Brown Wood",
+      "description": "W 63\" / D 40\" / H 16\" / 131 lb.",
+      "price": 510.99,
+      "category": 5,
+      "image_url": "/media/17668asian-coffee-tables.jpg",
+      "image": "17668asian-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 93,
+    "model": "products.product",
+    "fields": {
+      "sku": "17958",
+      "name": "Silver Glass  Iron",
+      "description": "W 21.7\" / D 21.7\" / H 21.4\" / 47.7 lb.",
+      "price": 629.99,
+      "category": 5,
+      "image_url": "/media/17958asian-side-tables-and-end-tables.jpg",
+      "image": "17958asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 94,
+    "model": "products.product",
+    "fields": {
+      "sku": "17832",
+      "name": "Gold Leaf Iron  Mirrored Glass",
+      "description": "W 12.25\" / D 16.5\" / H 21\" / 15 lb.",
+      "price": 624.99,
+      "category": 5,
+      "image_url": "/media/17832asian-side-tables-and-end-tables.jpg",
+      "image": "17832asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 95,
+    "model": "products.product",
+    "fields": {
+      "sku": "17936",
+      "name": "Brushed Gray Concrete  Wrought Iron",
+      "description": "W 18\" / D 0\" / H 22.5\" / 98 lb.",
+      "price": 507.99,
+      "category": 5,
+      "image_url": "/media/17936asian-side-tables-and-end-tables.jpg",
+      "image": "17936asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 96,
+    "model": "products.product",
+    "fields": {
+      "sku": "17922",
+      "name": "Gold Glass  Iron",
+      "description": "W 18\" / D 18\" / H 25.7\" / 30 lb.",
+      "price": 588.99,
+      "category": 5,
+      "image_url": "/media/17922asian-side-tables-and-end-tables.jpg",
+      "image": "17922asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 97,
+    "model": "products.product",
+    "fields": {
+      "sku": "17669",
+      "name": "Antique Silver Iron  Mirror",
+      "description": "W 19\" / D 19\" / H 22\" / 19 lb.",
+      "price": 390.99,
+      "category": 5,
+      "image_url": "/media/17669asian-side-tables-and-end-tables.jpg",
+      "image": "17669asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 98,
+    "model": "products.product",
+    "fields": {
+      "sku": "17914",
+      "name": "Natural Rosewood",
+      "description": "W 20\" / D 14\" / H 26\" / 44 lb.",
+      "price": 604.99,
+      "category": 5,
+      "image_url": "/media/17914asian-side-tables-and-end-tables.jpg",
+      "image": "17914asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 99,
+    "model": "products.product",
+    "fields": {
+      "sku": "17944",
+      "name": "Dark Brown Birch",
+      "description": "W 17.9\" / D 17\" / H 39.2\" / 16 lb.",
+      "price": 324.99,
+      "category": 5,
+      "image_url": "/media/17944asian-side-tables-and-end-tables.jpg",
+      "image": "17944asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 100,
+    "model": "products.product",
+    "fields": {
+      "sku": "17756",
+      "name": "Red Elm",
+      "description": "W 16\" / D 16\" / H 14\" / 18 lb.",
+      "price": 518.99,
+      "category": 5,
+      "image_url": "/media/17756asian-side-tables-and-end-tables.jpg",
+      "image": "17756asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 101,
+    "model": "products.product",
+    "fields": {
+      "sku": "17930",
+      "name": "Multicolored Metal",
+      "description": "Multicolored Metal",
+      "price": 660.99,
+      "category": 5,
+      "image_url": "/media/17930asian-side-tables-and-end-tables.jpg",
+      "image": "17930asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 102,
+    "model": "products.product",
+    "fields": {
+      "sku": "17951",
+      "name": "Gold / Mirror Iron",
+      "description": "W 18.3\" / D 25.3\" / H 25.3\" / 12 lb.",
+      "price": 611.99,
+      "category": 5,
+      "image_url": "/media/17951asian-side-tables-and-end-tables.jpg",
+      "image": "17951asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 103,
+    "model": "products.product",
+    "fields": {
+      "sku": "18223",
+      "name": "Caramelized Bamboo",
+      "description": "W 48\" / D 24\" / H 17\" / 38.8 lb.",
+      "price": 406.99,
+      "category": 5,
+      "image_url": "/media/18223asian-coffee-tables.jpg",
+      "image": "18223asian-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 104,
+    "model": "products.product",
+    "fields": {
+      "sku": "17818",
+      "name": "Brown Wood",
+      "description": "W 22\" / D 15\" / H 28\" / 52 lb.",
+      "price": 353.99,
+      "category": 5,
+      "image_url": "/media/17818asian-side-tables-and-end-tables.jpg",
+      "image": "17818asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 105,
+    "model": "products.product",
+    "fields": {
+      "sku": "17945",
+      "name": "Brown Mango Wood",
+      "description": "W 17\" / D 17\" / H 21\" / 4.5 lb.",
+      "price": 564.99,
+      "category": 5,
+      "image_url": "/media/17945asian-side-tables-and-end-tables.jpg",
+      "image": "17945asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 106,
+    "model": "products.product",
+    "fields": {
+      "sku": "17966",
+      "name": "Black BAMBOO",
+      "description": "W 14.75\" / D 20\" / H 17.5\" / 9.5 oz.",
+      "price": 354.99,
+      "category": 5,
+      "image_url": "/media/17966asian-side-tables-and-end-tables.jpg",
+      "image": "17966asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 107,
+    "model": "products.product",
+    "fields": {
+      "sku": "17974",
+      "name": "Gold Brass",
+      "description": "W 19.5\" / D 19.5\" / H 26.5\" / 31 lb.",
+      "price": 492.99,
+      "category": 5,
+      "image_url": "/media/17974asian-side-tables-and-end-tables.jpg",
+      "image": "17974asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 108,
+    "model": "products.product",
+    "fields": {
+      "sku": "17809",
+      "name": "Silver  Mirror Top Iron with Mirror Top",
+      "description": "W 19\" / D 19\" / H 19\" / 28 lb.",
+      "price": 419.99,
+      "category": 5,
+      "image_url": "/media/17809asian-side-tables-and-end-tables.jpg",
+      "image": "17809asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 109,
+    "model": "products.product",
+    "fields": {
+      "sku": "17867",
+      "name": "Brown Natural Fiber - Abaca",
+      "description": "W 23\" / D 23\" / H 23\" / 35 lb.",
+      "price": 658.99,
+      "category": 5,
+      "image_url": "/media/17867asian-side-tables-and-end-tables.jpg",
+      "image": "17867asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 110,
+    "model": "products.product",
+    "fields": {
+      "sku": "17666",
+      "name": "Black Rosewood",
+      "description": "W 36.75\" / D 36.75\" / H 16.25\" / 86 lb.",
+      "price": 571.99,
+      "category": 5,
+      "image_url": "/media/17666asian-coffee-tables.jpg",
+      "image": "17666asian-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 111,
+    "model": "products.product",
+    "fields": {
+      "sku": "17653",
+      "name": "Black Rosewood",
+      "description": "W 40\" / D 20\" / H 18\" / 55 lb.",
+      "price": 347.99,
+      "category": 5,
+      "image_url": "/media/17653asian-coffee-tables.jpg",
+      "image": "17653asian-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 112,
+    "model": "products.product",
+    "fields": {
+      "sku": "17869",
+      "name": "Medium Brown Bamboo",
+      "description": "W 28.5\" / D 28.5\" / H 26.25\" / 19.84 lb.",
+      "price": 508.99,
+      "category": 5,
+      "image_url": "/media/17869asian-side-tables-and-end-tables.jpg",
+      "image": "17869asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 113,
+    "model": "products.product",
+    "fields": {
+      "sku": "18589",
+      "name": "Light Brown Aluminum and Acrylic Top",
+      "description": "W 42\" / D 42\" / H 29\" / 41 lb.",
+      "price": 574.99,
+      "category": 5,
+      "image_url": "/media/18589asian-outdoor-dining-tables.jpg",
+      "image": "18589asian-outdoor-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 114,
+    "model": "products.product",
+    "fields": {
+      "sku": "17671",
+      "name": "Brown Engineered wood / Solid Wood",
+      "description": "W 22.75\" / D 15.5\" / H 23\" / 9 lb.",
+      "price": 513.99,
+      "category": 5,
+      "image_url": "/media/17671asian-side-tables-and-end-tables.jpg",
+      "image": "17671asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 115,
+    "model": "products.product",
+    "fields": {
+      "sku": "17682",
+      "name": "Black Rosewood",
+      "description": "W 60\" / D 15\" / H 30\" / 70 lb.",
+      "price": 385.99,
+      "category": 5,
+      "image_url": "/media/17682asian-console-tables.jpg",
+      "image": "17682asian-console-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 116,
+    "model": "products.product",
+    "fields": {
+      "sku": "17674",
+      "name": "Black Wood",
+      "description": "W 44\" / D 28\" / H 18\" / 76 lb.",
+      "price": 638.99,
+      "category": 5,
+      "image_url": "/media/17674asian-coffee-tables.jpg",
+      "image": "17674asian-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 117,
+    "model": "products.product",
+    "fields": {
+      "sku": "17814",
+      "name": "Red Wood",
+      "description": "W 22\" / D 22\" / H 24\" / 20 lb.",
+      "price": 522.99,
+      "category": 5,
+      "image_url": "/media/17814asian-side-tables-and-end-tables.jpg",
+      "image": "17814asian-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 118,
+    "model": "products.product",
+    "fields": {
+      "sku": "532",
+      "name": "Stainless Steel with BlackTempered Glass Metal",
+      "description": "W 20.5\" / D 20.5\" / H 20\" / 15.9 lb.",
+      "price": 575.99,
+      "category": 6,
+      "image_url": "/media/532contemporary-side-tables-and-end-tables.jpg",
+      "image": "532contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 119,
+    "model": "products.product",
+    "fields": {
+      "sku": "742",
+      "name": "Silver wood",
+      "description": "W 16\" / D 16\" / H 23\" / 30 lb.",
+      "price": 322.99,
+      "category": 6,
+      "image_url": "/media/742contemporary-side-tables-and-end-tables.jpg",
+      "image": "742contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 120,
+    "model": "products.product",
+    "fields": {
+      "sku": "2853",
+      "name": "Black Wood  MDF",
+      "description": "W 48\" / D 15.5\" / H 28\" / 31.35 lb.",
+      "price": 395.99,
+      "category": 6,
+      "image_url": "/media/2853contemporary-console-tables.jpg",
+      "image": "2853contemporary-console-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 121,
+    "model": "products.product",
+    "fields": {
+      "sku": "3573",
+      "name": "Nickel Stainless Steel  MDF  Mirrored Glass",
+      "description": "Nickel Stainless Steel  MDF  Mirrored Glass",
+      "price": 303.99,
+      "category": 6,
+      "image_url": "/media/3573contemporary-side-tables-and-end-tables.jpg",
+      "image": "3573contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 122,
+    "model": "products.product",
+    "fields": {
+      "sku": "3035",
+      "name": "Walnut Cast Iron  Laminate  Medium-Density Fibreboard",
+      "description": "W 24\" / D 42\" / H 43\" / 74 lb.",
+      "price": 465.99,
+      "category": 6,
+      "image_url": "/media/3035contemporary-indoor-pub-and-bistro-tables.jpg",
+      "image": "3035contemporary-indoor-pub-and-bistro-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 123,
+    "model": "products.product",
+    "fields": {
+      "sku": "1971",
+      "name": "White/Off-White Metal",
+      "description": "W 14.25\" / D 14.25\" / H 23\" / 24 lb.",
+      "price": 417.99,
+      "category": 6,
+      "image_url": "/media/1971contemporary-side-tables-and-end-tables.jpg",
+      "image": "1971contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 124,
+    "model": "products.product",
+    "fields": {
+      "sku": "1814",
+      "name": "Clear Polished Medium Brown Hardwood Solids  Veneers",
+      "description": "W 23.75\" / D 16\" / H 23.38\" / 33.01 lb.",
+      "price": 614.99,
+      "category": 6,
+      "image_url": "/media/1814contemporary-side-tables-and-end-tables.jpg",
+      "image": "1814contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 125,
+    "model": "products.product",
+    "fields": {
+      "sku": "2910",
+      "name": "Black Cast Iron  Laminate  Medium-Density Fibreboard",
+      "description": "W 42\" / D 42\" / H 31\" / 83 lb.",
+      "price": 582.99,
+      "category": 6,
+      "image_url": "/media/2910contemporary-indoor-pub-and-bistro-tables.jpg",
+      "image": "2910contemporary-indoor-pub-and-bistro-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 126,
+    "model": "products.product",
+    "fields": {
+      "sku": "3131",
+      "name": "Chestnut Hardwood",
+      "description": "W 12\" / D 12\" / H 24\" / 14 lb.",
+      "price": 656.99,
+      "category": 6,
+      "image_url": "/media/3131contemporary-plant-stands-and-telephone-tables.jpg",
+      "image": "3131contemporary-plant-stands-and-telephone-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 127,
+    "model": "products.product",
+    "fields": {
+      "sku": "2312",
+      "name": "White High Gloss Acrylic Lacquer and Wood",
+      "description": "W 47.5\" / D 23.5\" / H 18\" / 60 lb.",
+      "price": 444.99,
+      "category": 6,
+      "image_url": "/media/2312contemporary-coffee-tables.jpg",
+      "image": "2312contemporary-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 128,
+    "model": "products.product",
+    "fields": {
+      "sku": "1808",
+      "name": "Cherry Laminate/ Metal",
+      "description": "W 42\" / D 42\" / H 29\" / 64.8 lb.",
+      "price": 316.99,
+      "category": 6,
+      "image_url": "/media/1808contemporary-dining-tables.jpg",
+      "image": "1808contemporary-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 129,
+    "model": "products.product",
+    "fields": {
+      "sku": "3272",
+      "name": "Black Glass  MDF  Chrome",
+      "description": "W 20\" / D 20\" / H 24\" / 22 lb.",
+      "price": 548.99,
+      "category": 6,
+      "image_url": "/media/3272contemporary-side-tables-and-end-tables.jpg",
+      "image": "3272contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 130,
+    "model": "products.product",
+    "fields": {
+      "sku": "562",
+      "name": "White Wood",
+      "description": "W 17\" / D 17\" / H 23\" / 8 lb.",
+      "price": 634.99,
+      "category": 6,
+      "image_url": "/media/562contemporary-side-tables-and-end-tables.jpg",
+      "image": "562contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 131,
+    "model": "products.product",
+    "fields": {
+      "sku": "392",
+      "name": "Black Steel",
+      "description": "W 42\" / D 42\" / H 30\" / 100 lb.",
+      "price": 622.99,
+      "category": 6,
+      "image_url": "/media/392contemporary-dining-tables.jpg",
+      "image": "392contemporary-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 132,
+    "model": "products.product",
+    "fields": {
+      "sku": "309",
+      "name": "Mahogany MDF Wood",
+      "description": "W 16\" / D 16\" / H 25\" / 5.23 lb.",
+      "price": 459.99,
+      "category": 6,
+      "image_url": "/media/309contemporary-side-tables-and-end-tables.jpg",
+      "image": "309contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 133,
+    "model": "products.product",
+    "fields": {
+      "sku": "3227",
+      "name": "Chocolate Veneer/MDF/Honeycomb",
+      "description": "W 63\" / D 35\" / H 28\" / 85 lb.",
+      "price": 545.99,
+      "category": 6,
+      "image_url": "/media/3227contemporary-dining-tables.jpg",
+      "image": "3227contemporary-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 134,
+    "model": "products.product",
+    "fields": {
+      "sku": "2163",
+      "name": "Walnut on Walnut Wood",
+      "description": "W 40\" / D 40\" / H 18\" / 110 lb.",
+      "price": 647.99,
+      "category": 6,
+      "image_url": "/media/2163contemporary-coffee-tables.jpg",
+      "image": "2163contemporary-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 135,
+    "model": "products.product",
+    "fields": {
+      "sku": "448",
+      "name": "Brown Vellum Iron  Wood  Vellum  Shagreen  Mirror",
+      "description": "W 20\" / D 9\" / H 23\" / 49 lb.",
+      "price": 552.99,
+      "category": 6,
+      "image_url": "/media/448contemporary-side-tables-and-end-tables.jpg",
+      "image": "448contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 136,
+    "model": "products.product",
+    "fields": {
+      "sku": "1127",
+      "name": "Gray METAL/WOOD",
+      "description": "W 15.75\" / D 15.75\" / H 24\" / 8.8 lb.",
+      "price": 313.99,
+      "category": 6,
+      "image_url": "/media/1127contemporary-side-tables-and-end-tables.jpg",
+      "image": "1127contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 137,
+    "model": "products.product",
+    "fields": {
+      "sku": "1043",
+      "name": "Mocha Painted Tempered Glass  Painted Steel",
+      "description": "W 35.4\" / D 78.7\" / H 29.5\" / 173 lb.",
+      "price": 342.99,
+      "category": 6,
+      "image_url": "/media/1043contemporary-dining-tables.jpg",
+      "image": "1043contemporary-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 138,
+    "model": "products.product",
+    "fields": {
+      "sku": "3448",
+      "name": "Black Granite",
+      "description": "W 47.5\" / D 39.5\" / H 30\" / 258 lb.",
+      "price": 436.99,
+      "category": 6,
+      "image_url": "/media/3448contemporary-dining-tables.jpg",
+      "image": "3448contemporary-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 139,
+    "model": "products.product",
+    "fields": {
+      "sku": "910",
+      "name": "Mahogany  Silver Legs Mdf/Wood Veneer/Pvc/Metal Legs",
+      "description": "Mahogany  Silver Legs Mdf/Wood Veneer/Pvc/Metal Legs",
+      "price": 562.99,
+      "category": 6,
+      "image_url": "/media/910contemporary-coffee-tables.jpg",
+      "image": "910contemporary-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 140,
+    "model": "products.product",
+    "fields": {
+      "sku": "310",
+      "name": "Black Wood Product With Metal Base",
+      "description": "W 18\" / D 18\" / H 24\" / 14 lb.",
+      "price": 623.99,
+      "category": 6,
+      "image_url": "/media/310contemporary-side-tables-and-end-tables.jpg",
+      "image": "310contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 141,
+    "model": "products.product",
+    "fields": {
+      "sku": "2636",
+      "name": "Black PE Wicker",
+      "description": "W 17.5\" / D 17.5\" / H 16.75\" / 5.91 lb.",
+      "price": 507.99,
+      "category": 6,
+      "image_url": "/media/2636contemporary-outdoor-side-tables.jpg",
+      "image": "2636contemporary-outdoor-side-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 142,
+    "model": "products.product",
+    "fields": {
+      "sku": "2614",
+      "name": "Stainless Steel Stainless Steel",
+      "description": "W 36\" / D 36\" / H 16\" / 72 lb.",
+      "price": 678.99,
+      "category": 6,
+      "image_url": "/media/2614contemporary-coffee-tables.jpg",
+      "image": "2614contemporary-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 143,
+    "model": "products.product",
+    "fields": {
+      "sku": "1766",
+      "name": "Black Bass Wood",
+      "description": "W 20\" / D 20\" / H 20\" / 27 lb.",
+      "price": 361.99,
+      "category": 6,
+      "image_url": "/media/1766contemporary-side-tables-and-end-tables.jpg",
+      "image": "1766contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 144,
+    "model": "products.product",
+    "fields": {
+      "sku": "1727",
+      "name": "Dark Espresso Solid / Composite Wood",
+      "description": "W 39.37\" / D 13.93\" / H 29.56\" / 24 lb.",
+      "price": 432.99,
+      "category": 6,
+      "image_url": "/media/1727contemporary-console-tables.jpg",
+      "image": "1727contemporary-console-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 145,
+    "model": "products.product",
+    "fields": {
+      "sku": "125",
+      "name": "White / Chrome Finished in a high gloss white lacquer for added modern appeal",
+      "description": "W 78.75\" / D 39.5\" / H 30\" / 145 lb.",
+      "price": 567.99,
+      "category": 6,
+      "image_url": "/media/125contemporary-dining-tables.jpg",
+      "image": "125contemporary-dining-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 146,
+    "model": "products.product",
+    "fields": {
+      "sku": "1435",
+      "name": "Light Natural Recycled Sono Wood",
+      "description": "Light Natural Recycled Sono Wood",
+      "price": 484.99,
+      "category": 6,
+      "image_url": "/media/1435contemporary-side-tables-and-end-tables.jpg",
+      "image": "1435contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 147,
+    "model": "products.product",
+    "fields": {
+      "sku": "2789",
+      "name": "Silver Aluminum",
+      "description": "W 40\" / D 40\" / H 13\" / 12 lb.",
+      "price": 524.99,
+      "category": 6,
+      "image_url": "/media/2789contemporary-coffee-tables.jpg",
+      "image": "2789contemporary-coffee-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 148,
+    "model": "products.product",
+    "fields": {
+      "sku": "933",
+      "name": "Silver Metal  Mirror",
+      "description": "W 18\" / D 10.5\" / H 26\" / 29.1 lb.",
+      "price": 446.99,
+      "category": 6,
+      "image_url": "/media/933contemporary-side-tables-and-end-tables.jpg",
+      "image": "933contemporary-side-tables-and-end-tables.jpg",
+      "in_stock": true
+    }
+  },
+  {
+    "pk": 149,
+    "model": "products.product",
+    "fields": {
+      "sku": "602",
+      "name": "Silver Metal",
+      "description": "W 35\" / D 35\" / H 14\" / 21 lb.",
+      "price": 510.99,
+      "category": 6,
+      "image_url": "/media/602contemporary-coffee-tables.jpg",
+      "image": "602contemporary-coffee-tables.jpg",
+      "in_stock": true
+    }
+  }
+]
