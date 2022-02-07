@@ -27,8 +27,8 @@
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "mediteranean",
-            "friendly_name": "Mediteranean"
+            "name": "mediterranean",
+            "friendly_name": "Mediterranean"
         }
     },
     {
