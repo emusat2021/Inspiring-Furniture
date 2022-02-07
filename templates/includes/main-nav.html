@@ -23,9 +23,9 @@
                 Sofas
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="sofa-link">
-                <a href="" class="dropdown-item">Modern Sofas</a>
-                <a href="" class="dropdown-item">Scandinavian Sofas</a>
-                <a href="" class="dropdown-item">All Sofas</a>
+                <a href="{% url 'products' %}?category=modern" class="dropdown-item">Modern Sofas</a>
+                <a href="{% url 'products' %}?category=scandinavian" class="dropdown-item">Scandinavian Sofas</a>
+                <a href="{% url 'products' %}?category=modern,scandinavian" class="dropdown-item">All Sofas</a>
             </div>
         </li>
 
@@ -34,9 +34,9 @@
                 Chairs
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="chair-link">
-                <a href="" class="dropdown-item">Traditional Chairs</a>
-                <a href="" class="dropdown-item">Mediteranean Chairs</a>
-                <a href="" class="dropdown-item">All Chairs</a>
+                <a href="{% url 'products' %}?category=traditional" class="dropdown-item">Traditional Chairs</a>
+                <a href="{% url 'products' %}?category=mediteranean" class="dropdown-item">Mediteranean Chairs</a>
+                <a href="{% url 'products' %}?category=traditional,mediteranean" class="dropdown-item">All Chairs</a>
             </div>
         </li>
 
@@ -45,9 +45,9 @@
                 Tables
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="chair-link">
-                <a href="" class="dropdown-item">Asian Tables</a>
-                <a href="" class="dropdown-item">Contemporary Tables</a>
-                <a href="" class="dropdown-item">All Tables</a>
+                <a href="{% url 'products' %}?category=asian" class="dropdown-item">Asian Tables</a>
+                <a href="{% url 'products' %}?category=contemporary" class="dropdown-item">Contemporary Tables</a>
+                <a href="{% url 'products' %}?category=asian,contemporary" class="dropdown-item">All Tables</a>
             </div>
         </li>
 
@@ -57,9 +57,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">News</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=news" class="dropdown-item">News</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=news,deals" class="dropdown-item">All Specials</a>
             </div>
         </li>
 
