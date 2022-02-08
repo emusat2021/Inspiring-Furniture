@@ -11,9 +11,9 @@
                 All Furniture
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-furniture-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Furniture</a>
             </div>
         </li>
@@ -64,8 +64,8 @@
         </li>
 
         
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'contact' %}" id="contact-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {% if request.get_full_path == '/contact/' %}active-nav-link{% endif %}>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'contact' %}" id="contact-link" aria-haspopup="true" aria-expanded="false"{#% if request.get_full_path == '/contact/' %}active-nav-link{% endif %#}>
                 Contact us
             </a>
         </li>
