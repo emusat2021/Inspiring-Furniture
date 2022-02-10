@@ -68,6 +68,11 @@ body {
     color: #cf461d !important;
 }
 
+.shop-now-button:hover {
+    background: #cf461d !important;
+    color: #555 !important;
+}
+
 .text-logo1,
 .text-account,
 .text-bag,
