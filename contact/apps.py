@@ -1,3 +1,5 @@
+# Taken from: https://github.com/irinatu17/Art-of-Tea
+# Taken from: https://github.com/juanstelling/MS4-prints
 from django.apps import AppConfig
 
 
