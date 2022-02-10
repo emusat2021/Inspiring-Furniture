@@ -105,6 +105,10 @@ body {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #eb5e3a !important;
+    color: #fff !important;
+}
 
 .btt-button {
     height: 42px;
