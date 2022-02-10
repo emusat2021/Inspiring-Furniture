@@ -104,15 +104,15 @@
         {% include 'includes/mobile-top-header.html' %}
         {% include 'includes/main-nav.html' %}
       </nav>
-  </div>
-  <div id="delivery-banner" class="row text-center">
-    <div class="col bg-secondary text-white">
-      <h4 class="logo-font my-1">Free delivery * 365 days Open BUY on orders over ${{ free_delivery_threshold }}!</h4>                
-    </div>            
-  </div>
-</header>
+    </div>
+    <div id="delivery-banner" class="row text-center">
+      <div class="col bg-secondary text-white">
+        <h4 class="logo-font my-1">Free delivery * 365 days Open BUY on orders over ${{ free_delivery_threshold }}!</h4>                
+      </div>
+    </div>
+  </header>
 
-    {% if messages %}
+  {% if messages %}
     <div class="message-container">
         {% for message in messages %}
             {% with message.level as level %}
@@ -128,19 +128,19 @@
             {% endwith %}
         {% endfor %}
     </div>
-    {% endif %}
+  {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+  {% block page_header %}
+  {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
-    {% block postloadjs %}
+  {% block postloadjs %}
   <script type="text/javascript">
       $('.toast').toast('show');
   </script>
-    {% endblock %}
+  {% endblock %}
 
   </body>
 </html>
