@@ -45,6 +45,19 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: #cf461d !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #cf461d;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #cf461d;;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
