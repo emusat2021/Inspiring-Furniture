@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                    <div class="table-responsive rounded">
+                    <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless">
                             <thead class="text-cust">
                                 <tr>
@@ -55,19 +55,19 @@
                                                     <dir class="input-group-preped">
                                                         <button class="decrement-qty btn btn-cust rounded-0"
                                                             data-item_id="{{ item.item.id }}" id="decrement-qty_{{ item.item.id }}">
-                                                            <span>
-                                                                <i class="fas fa-minus fa-sm"></i>
+                                                            <span class="icon">
+                                                                <i class="fas fa-minus"></i>
                                                             </span>
                                                         </button>
                                                     </dir>
                                                     <input class="form-control form-control-sm qty_input"
                                                         type="number" name="quantity" value="{{ item.quantity }}" min="1" max="20"
-                                                        data-item_id="{{ item.item.id }}" id="id_qty_{{ item.item.id }}">
+                                                        data-item_id="{{ item.item.id }}" id="id_qty_{{ item.item.id }}" length="2">
                                                     <div class="input-group-append">
-                                                        <button class="increment-qty btn btn-sm btn-cust rounded-0"
+                                                        <button class="increment-qty btn btn btn-cust rounded-0"
                                                             data-item_id="{{ item.item.id }}" id="increment-qty_{{ item.item.id }}">
-                                                            <span>
-                                                                <i class="fas fa-plus fa-sm"></i>
+                                                            <span class="icon">
+                                                                <i class="fas fa-plus"></i>
                                                             </span>
                                                         </button>
                                                     </div>
