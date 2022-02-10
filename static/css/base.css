@@ -190,7 +190,6 @@ a.category-badge > span.badge:hover {
 /* Bootstrap */
 .bag-notification-wrapper {
     height: 100px;
-    overflow-x: hidden;
     overflow-y: auto;
 }
     
