@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Category(models.Model):
 
@@ -27,3 +28,10 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name  
+
+
+class Rating(models.Model):
+    # user_id = models.OneToOneField(User, on_delete=models.CASCADE)
+    product_id = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL)
+    review_text = models.TextField()
+    number_of_stars = models.IntegerField(null=False, blank=False)

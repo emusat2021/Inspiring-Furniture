@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Rating
 
 
 
@@ -47,8 +47,34 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    # calculate average rating for the products
+    # convert all ratings into a list
+    ratings_obj = Rating.objects.all()
+    ratings = []
+    for rating in ratings_obj:
+        ratings.append(rating)
+
+    # adjust rating property to the average of ratings for each product
+    # average_rating: avergage rating
+    # rating_classes: average_rating rounded to the nearest integer used for css classes
+    products_with_ratings = []
+    for product in products:
+        product.average_rating = "N/A"
+        product.rating_classes = []
+        # find all ratings for the current product
+        product_ratings = [x.number_of_stars for x in ratings if x.product_id_id == product.pk]
+        # if ratings were found, then calculate average_rating for the current product
+        if len(product_ratings) != 0:
+            product.average_rating = str(sum(product_ratings) / len(product_ratings))
+            for item in range(round(float(product.average_rating))):
+                    product.rating_classes.append("active")
+            for item in range(5 - round(float(product.average_rating))):
+                    product.rating_classes.append("inactive")
+
+        products_with_ratings.append(product)
+
     context = {
-        'products': products,
+        'products': products_with_ratings,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
