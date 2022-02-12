@@ -25,7 +25,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+try:
+    from . import private_config
+    ALLOWED_HOSTS = private_config.ALLOWED_HOSTS
+except Exception:
+    ALLOWED_HOSTS = ["inspiring-furniture.herokuapp.com"]
 
 
 # Application definition
