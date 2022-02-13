@@ -93,10 +93,14 @@
                                                 <small class="text-muted">Not in Stock</small>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
-                                                <small class="ml-3">
+                                                <p class="mt-1 mb-0">
+                                                    <small class="ml-3">
+                                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                                </small>
+                                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    </small>
+                                                </p>    
                                             {% endif %}
                                         </div>
                                     </div>
