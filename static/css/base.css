@@ -95,6 +95,13 @@ body {
     padding-top: 10rem;
 }
 
+/* My Account */
+.account-cust,
+.account-cust a:hover {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
