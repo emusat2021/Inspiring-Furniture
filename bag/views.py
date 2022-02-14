@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
+from django.views.decorators.http import require_http_methods
 
 from products.models import Product
 
@@ -8,6 +9,8 @@ def view_bag(request):
 
     return render(request, 'bag/bag.html')
 
+
+@require_http_methods(["POST"])
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
