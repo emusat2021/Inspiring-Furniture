@@ -78,10 +78,15 @@
                     </a>
                 </li>
             {% endif %}
-                <li class="nav-item d-block d-lg-none">
-                    <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'profile' %}" id="profile-link" aria-haspopup="true" aria-expanded="false">
-                        My Profile
+                <li class="nav-item d-block d-lg-none dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-cust-special-offers mr-3" href="#" id="my-account-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Account
                     </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                        <a href="{% url 'order_history_list' %}" class="dropdown-item">Order History</a>
+                        <a href="{% url 'review_list' %}" class="dropdown-item">My Reviews</a>
+                    </div>
                 </li>
                 <li class="nav-item d-block d-lg-none">
                     <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'account_logout' %}" id="account-logout-link" aria-haspopup="true" aria-expanded="false">
