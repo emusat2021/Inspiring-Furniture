@@ -85,7 +85,7 @@
                                                 </a>
                                             </p>
                                             {% endif %}
-                                            {% if product.rating %}
+                                            {% if product.average_rating %}
                                             <p class="lead mb-0 text-left"> Rating: {{ product.average_rating }} of 5</p>
                                             <p class="lead mb-0 text-left" aria-label="Rating is {{ product.average_rating }} out of 5">
                                             {% for star in product.rating_classes %}
