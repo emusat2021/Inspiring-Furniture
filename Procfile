@@ -1,1 +1,1 @@
-web: gunicorn inspiring-furniture.wsgi:application
+web: gunicorn inspiring_furniture.wsgi:application
