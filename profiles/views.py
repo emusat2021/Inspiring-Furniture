@@ -36,6 +36,7 @@ def profile(request):
 
 
 def order_history_list(request):
+    """ Display all user's orders. """
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all()
 
@@ -48,6 +49,7 @@ def order_history_list(request):
 
 
 def order_history(request, order_number):
+    """ Display one user's order. """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
@@ -66,6 +68,7 @@ def order_history(request, order_number):
 
 @login_required
 def review_list(request):
+    """ Display a list of unique purchased products for the current user. """
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all()
     products_dict = {}
