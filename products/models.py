@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 
 class Category(models.Model):
 
@@ -31,7 +31,7 @@ class Product(models.Model):
 
 
 class Rating(models.Model):
-    # user_id = models.OneToOneField(User, on_delete=models.CASCADE)
+    user_id = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     product_id = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL)
     review_text = models.TextField()
     number_of_stars = models.IntegerField(null=False, blank=False)
