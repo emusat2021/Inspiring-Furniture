@@ -36,8 +36,8 @@
                     {% for product_k, product_v in products.items %}
                         <tr>
                             <td>
-                                <a href="{{ product_v.image_url }}" target="_blank">
-                                    <img class="card-img-top img-fluid" style="width: 25%;" src="{{ product_v.image_url }}" alt="{{ product_v.name }}">
+                                <a href="{{ product_v.image.url }}" target="_blank">
+                                    <img class="card-img-top img-fluid" style="width: 25%;" src="{{ product_v.image.url }}" alt="{{ product_v.name }}">
                                 </a>
                             </td>
                             <td>{{ product_v.name }}</td>
