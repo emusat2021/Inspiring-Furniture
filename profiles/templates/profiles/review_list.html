@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+            <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218"/>
+        </symbol>
+    </svg>
+
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4">My Reviews</h2>
+                <h4 class="logo-font mb-4 text-cust">{{ user }}</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table>
+                    {% for product_k, product_v in products.items %}
+                        <tr>
+                            <td>
+                                <a href="{{ product_v.image_url }}" target="_blank">
+                                    <img class="card-img-top img-fluid" style="width: 25%;" src="{{ product_v.image_url }}" alt="{{ product_v.name }}">
+                                </a>
+                            </td>
+                            <td>{{ product_v.name }}</td>
+                            <td>
+                                {% if product_v.rating == 0 %}
+                                    <p>Rate this product</p>
+                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=1">
+                                        <svg class="c-icon inactive" width="32" height="32">
+                                            <use href="#star"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=2">
+                                        <svg class="c-icon inactive" width="32" height="32">
+                                        <use href="#star"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=3">
+                                        <svg class="c-icon inactive" width="32" height="32">
+                                            <use href="#star"></use>
+                                        </svg>
+                                    </a>
+                                        <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=4">
+                                        <svg class="c-icon inactive" width="32" height="32">
+                                            <use href="#star"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=5">
+                                        <svg class="c-icon inactive" width="32" height="32">
+                                            <use href="#star"></use>
+                                        </svg>
+                                    </a>
+                                {% else %}
+                                <p><a class="text-danger" href="{% url 'delete_review' product_v.id %}?type=rating">Clear rating</a></p>
+                                    {% for star in product_v.rating_classes %}
+                                            <svg class="c-icon {{ star }}" width="32" height="32">
+                                                <use href="#star"></use>
+                                            </svg>
+                                    {% endfor %}
+                                {% endif %}
+                                
+                            </td>
+                            <td>{{ product_v.review_text }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+{% endblock %}

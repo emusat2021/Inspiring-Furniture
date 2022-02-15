@@ -1,0 +1,109 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text mr-3" href="#" id="all-furniture-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Furniture
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-furniture-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Furniture</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text mr-3" href="#" id="sofa-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sofas
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="sofa-link">
+                <a href="{% url 'products' %}?category=modern" class="dropdown-item">Modern Sofas</a>
+                <a href="{% url 'products' %}?category=scandinavian" class="dropdown-item">Scandinavian Sofas</a>
+                <a href="{% url 'products' %}?category=modern,scandinavian" class="dropdown-item">All Sofas</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text mr-3" href="#" id="chair-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Chairs
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="chair-link">
+                <a href="{% url 'products' %}?category=traditional" class="dropdown-item">Traditional Chairs</a>
+                <a href="{% url 'products' %}?category=mediterranean" class="dropdown-item">Mediterranean Chairs</a>
+                <a href="{% url 'products' %}?category=traditional,mediterranean" class="dropdown-item">All Chairs</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text mr-3" href="#" id="table-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tables
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="chair-link">
+                <a href="{% url 'products' %}?category=asian" class="dropdown-item">Asian Tables</a>
+                <a href="{% url 'products' %}?category=contemporary" class="dropdown-item">Contemporary Tables</a>
+                <a href="{% url 'products' %}?category=asian,contemporary" class="dropdown-item">All Tables</a>
+            </div>
+        </li>
+
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-cust-special-offers mr-3" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Offers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=news" class="dropdown-item">News</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=news,deals" class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+
+        
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'contact' %}" id="contact-link" aria-haspopup="true" aria-expanded="false">
+                Contact us
+            </a>
+        </li>
+        <li class="dropdown-divider d-block d-lg-none"></li>
+        {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+                <li class="nav-item d-block ">
+                    <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'add_product' %}" id="add-product-link" aria-haspopup="true" aria-expanded="false">
+                        Admin
+                    </a>
+                </li>
+            {% endif %}
+                <li class="nav-item d-block d-lg-none dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-cust-special-offers mr-3" href="#" id="my-account-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Account
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                        <a href="{% url 'order_history_list' %}" class="dropdown-item">Order History</a>
+                        <a href="{% url 'review_list' %}" class="dropdown-item">My Reviews</a>
+                    </div>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                    <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'account_logout' %}" id="account-logout-link" aria-haspopup="true" aria-expanded="false">
+                        Logout
+                    </a>
+                </li> 
+        {% else %}
+            <li class="nav-item d-block d-lg-none">
+                <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'account_login' %}" id="login-link" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+                <a class="logo-font font-weight-bold nav-link text-cust-contact mr-5" href="{% url 'account_signup' %}" id="register-link" aria-haspopup="true" aria-expanded="false">
+                    Register
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</div>

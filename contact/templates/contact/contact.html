@@ -1,0 +1,33 @@
+<!-- Taken from https://github.com/irinatu17/Art-of-Tea -->
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}Contact{% endblock %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col mt-3"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-5 mb-5">
+    <!--Contact Heading-->
+        {% include 'contact/includes/contact_heading.html' %} 
+
+    <div class="row mt-4">
+        <!--Contact Details -->
+        {% include 'contact/includes/contact_details.html' %} 
+        <!--Contact Form-->
+        {% include 'contact/includes/contact_form.html' %} 
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %} 
+{% endblock %}
