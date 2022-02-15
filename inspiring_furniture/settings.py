@@ -30,7 +30,7 @@ try:
     from . import private_config
     ALLOWED_HOSTS = private_config.ALLOWED_HOSTS
 except Exception:
-    ALLOWED_HOSTS = ["inspiring-furniture.herokuapp.com"]
+    ALLOWED_HOSTS = ['inspiring-furniture.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -124,12 +124,18 @@ WSGI_APPLICATION = 'inspiring_furniture.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+if 'DATABASES' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASES_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
