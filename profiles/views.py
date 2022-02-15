@@ -1,11 +1,12 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+from django.core.exceptions import ObjectDoesNotExist
 from .models import UserProfile
 from .forms import UserProfileForm
-
 from checkout.models import Order
-
+from products.models import Rating, Product
 
 @login_required
 def profile(request):
@@ -61,4 +62,98 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def review_list(request):
+    profile = get_object_or_404(UserProfile, user=request.user)
+    orders = profile.orders.all()
+    products_dict = {}
+    for order in orders:
+        for product_item in order.lineitems.all():
+            # build a dictionary with unique product id
+            # (for example, if user purchased same product on two different orders)
+            if product_item.product.pk not in products_dict.keys():
+                products_dict[product_item.product.pk] = product_item.product
+    ratings = Rating.objects.all()
     
+    # searching for a rating in all ratings
+    # where the rating's product_id is equal to product's pk/id
+    # and the rating's user_id is equal to current user's id.
+    # if the rating is not found, then it is initialized with zero
+    for item_k, item_v in products_dict.items():
+        item_v.rating = 0
+        item_v.review_text = ""
+        item_v.rating_classes = []
+        for rating in ratings:
+            if rating.user_id_id == request.user.id and rating.product_id_id == item_v.pk:
+                item_v.rating = rating.number_of_stars
+                item_v.review_text = rating.review_text
+                for x in range(int(item_v.rating)):
+                    item_v.rating_classes.append("active")
+                for x in range(5 - int(item_v.rating)):
+                    item_v.rating_classes.append("inactive")
+
+
+    template = 'profiles/review_list.html'
+    context = {
+        'products': products_dict,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_review(request, product_id):
+    """ Delete a rating or a review_text, given the product_id and 'type' argument """
+    if 'type' not in request.GET:
+        return redirect(reverse('review_list'))
+    type = request.GET["type"]
+    rating = get_object_or_404(Rating, product_id_id=product_id, user_id_id=request.user.id)
+    if type == "rating":
+        rating.number_of_stars = 0
+        rating.save()
+        messages.success(request, 'Rating deleted!')
+    if type == "review_text":
+        rating.review_text = ""
+        rating.save()
+        messages.success(request, 'Review message deleted!')
+    return redirect(reverse('review_list'))
+
+
+@login_required
+def edit_review(request, product_id):
+    """ Edit a rating or a review_text, given the product_id and 'type' argument """
+    if 'type' not in request.GET:
+        return redirect(reverse('review_list'))
+    type = request.GET["type"]
+    number_of_stars = 0
+    review_text = ""
+    if 'number_of_stars' in request.GET:
+        number_of_stars = request.GET["number_of_stars"]
+    if 'review_text' in request.GET:
+        review_text = request.GET["review_text"]
+
+    # https://stackoverflow.com/questions/14255125/catching-doesnotexist-exception-in-a-custom-manager-in-django
+    # try to find a record in the database for the current respective product_id and current user
+    # if there is no record in the database then we need to create it in the except block
+    # we create the record first, otherwise get_object_or_404 would generate an error
+    try:
+        rating = Rating.objects.get(product_id_id=product_id, user_id_id=request.user.id)
+    except ObjectDoesNotExist:
+        # https://docs.djangoproject.com/en/dev/ref/models/instances/#saving-objects
+        # build a Rating object with the product_id, user_id, number_of_stars and review_text
+        rating = Rating(product_id=Product(product_id), user_id=User(request.user.id), number_of_stars=number_of_stars, review_text=review_text)
+        # save the object in the database
+        rating.save()
+
+    rating = get_object_or_404(Rating, product_id_id=product_id, user_id_id=request.user.id)
+    if type == "rating":
+        rating.number_of_stars = number_of_stars
+        rating.save()
+        messages.success(request, 'Rating updated!')
+    if type == "review_text":
+        rating.review_text = ""
+        rating.save()
+        messages.success(request, 'Review message deleted!')
+    return redirect(reverse('review_list'))
