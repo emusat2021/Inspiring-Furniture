@@ -35,7 +35,6 @@ Flask==2.0.1
 Flask-PyMongo==2.3.0
 google-auth==1.32.0
 google-auth-oauthlib==0.4.4
-gpg===1.13.1-unknown
 gspread==3.7.0
 gunicorn==20.1.0
 httplib2==0.14.0
