@@ -34,7 +34,11 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
+    try:
+        quantity = int(request.POST.get('quantity'))
+    except ValueError:
+        messages.error(request, f'Invalid quantity!')
+        return redirect(reverse('view_bag'))    
     bag = request.session.get('bag', {})
 
     if quantity > 0:
