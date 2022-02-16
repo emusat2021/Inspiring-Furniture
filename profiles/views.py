@@ -111,6 +111,11 @@ def edit_review(request, product_id):
     if 'review_text' in request.GET:
         review_text = request.GET["review_text"]
 
+    products_dict = functions.retrieve_purchased_products(request)
+    if product_id not in products_dict:
+        messages.warning(request, 'You are not allowed to rate this product until you purchased it!')
+        return redirect(reverse('review_list'))
+
     # https://stackoverflow.com/questions/14255125/catching-doesnotexist-exception-in-a-custom-manager-in-django
     # try to find a record in the database for the current respective product_id and current user
     # if there is no record in the database then we need to create it in the except block
