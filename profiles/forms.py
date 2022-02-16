@@ -33,3 +33,11 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+        # validate default_full_name to contain only letters
+        # https://stackoverflow.com/a/15472787
+        self.fields['default_full_name'].widget.attrs['pattern'] = '^[a-zA-Z_ ]*$'
+        # https://stackoverflow.com/a/47600422
+        self.fields['default_full_name'].widget.attrs['oninvalid'] = "setCustomValidity('Name must contain only letters and/or space.')"
+        # validate phone number to contain only numbers and the plus sign
+        self.fields['default_phone_number'].widget.attrs['pattern'] = '[0-9\+]+'
+        self.fields['default_phone_number'].widget.attrs['oninvalid'] = "setCustomValidity('Telephone number must contain only digits and/or plus. No other characters are allowed.')"
