@@ -3,6 +3,7 @@
 from django import forms
 from .models import ContactMessage
 
+
 class ContactForm(forms.ModelForm):
     """
     A form for contact page

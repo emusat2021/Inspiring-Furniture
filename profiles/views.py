@@ -36,7 +36,6 @@ def profile(request):
     return render(request, template, context)
 
 
-
 def order_history_list(request):
     """ Display all user's orders. """
     profile = get_object_or_404(UserProfile, user=request.user)
@@ -86,7 +85,7 @@ def delete_review(request, product_id):
     if 'type' not in request.GET:
         return redirect(reverse('review_list'))
     type = request.GET["type"]
-    
+
     products_dict = functions.retrieve_purchased_products(request)
     if product_id not in products_dict:
         messages.warning(request, 'You are not allowed to delete the rating for this product until you purchased it!')

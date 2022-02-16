@@ -1,13 +1,7 @@
 """ This module contains different functions for the profile app """
-from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
-from django.core.exceptions import ObjectDoesNotExist
+from django.shortcuts import get_object_or_404
 from .models import UserProfile
-from .forms import UserProfileForm
-from checkout.models import Order
-from products.models import Rating, Product
+from products.models import Rating
 
 
 def retrieve_purchased_products(request):
@@ -22,7 +16,7 @@ def retrieve_purchased_products(request):
             if product_item.product.pk not in products_dict.keys():
                 products_dict[product_item.product.pk] = product_item.product
     ratings = Rating.objects.all()
-    
+
     # searching for a rating in all ratings
     # where the rating's product_id is equal to product's pk/id
     # and the rating's user_id is equal to current user's id.
