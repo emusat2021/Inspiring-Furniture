@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def info(request):
     """ Information table of contents """
     template = 'info/info.html'
