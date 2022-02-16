@@ -22,7 +22,10 @@ def contact(request):
             try:
                 send_mail(
                     f"Message from {full_name} <{user_email}>", # log line
-                    "You received a contact inquery", # message
+                    # message
+                    "You received a contact inquery from:\n"+ \
+                    f"mailto:{user_email}\n" + \
+                    contact_form.cleaned_data['message'],
                     settings.EMAIL_HOST_USER,  # to
                     [settings.DEFAULT_FROM_EMAIL], # from
                     fail_silently=False
