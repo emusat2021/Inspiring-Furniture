@@ -113,12 +113,10 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form name="review_form" action="#" method=""POST>
+                <form action="{% url 'edit_review' product_v.id %}" method="POST">
+                    {% csrf_token %}
                 <div class="modal-body">
-                    
-                        <textarea cols="50" rows="7">{{ product_v.review_text }}</textarea>
-                    
-                    
+                    {{ product_v.review_form_obj.review_text }}
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
