@@ -35,13 +35,13 @@
                 <table>
                     {% for product_k, product_v in products.items %}
                         <tr>
-                            <td>
+                            <td style="vertical-align: top">
                                 <a href="{{ product_v.image.url }}" target="_blank">
                                     <img class="card-img-top img-fluid" style="width: 25%;" src="{{ product_v.image.url }}" alt="{{ product_v.name }}">
                                 </a>
                             </td>
-                            <td>{{ product_v.name }}</td>
-                            <td>
+                            <td style="vertical-align: top">{{ product_v.name }}</td>
+                            <td style="vertical-align: top">
                                 {% if product_v.rating == 0 %}
                                     <p>Rate this product</p>
                                     <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=1">
@@ -77,15 +77,59 @@
                                             </svg>
                                     {% endfor %}
                                 {% endif %}
-                                
                             </td>
-                            <td>{{ product_v.review_text }}</td>
+                            <td style="vertical-align: top">
+                                {{ product_v.review_text }}
+                                <br>
+                                {% if product_v.review_text|length == 0 %}
+                                    <button type="button" class="btn btn-info btn-small" data-toggle="modal" data-target="#editModal{{ product_v.id }}">
+                                        Write a review
+                                    </button>
+                                {% else %}
+                                    <button type="button" class="btn btn-info btn-small" data-toggle="modal" data-target="#editModal{{ product_v.id }}">
+                                        Edit review
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-small" data-toggle="modal" data-target="#editModal{{ product_v.id }}">
+                                        Delete review
+                                    </button>
+                                {% endif %}
+    
+                            </td>
                         </tr>
                     {% endfor %}
                 </table>
             </div>
         </div>
     </div>
+
+    {% for product_k, product_v in products.items %}
+        <!-- Edit review text Modal -->
+        <div class="modal fade" id="editModal{{ product_v.id }}" tabindex="-1" role="dialog" aria-labelledby="editModal{{ product_v.id }}Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModal{{ product_v.id }}Label">Edit review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form name="review_form" action="#" method=""POST>
+                <div class="modal-body">
+                    
+                        <textarea cols="50" rows="7">{{ product_v.review_text }}</textarea>
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <input type="submit" name="submit" value="Save" class="btn btn-info">
+                </div>
+                </form>
+                </div>
+            </div>
+            </div>
+    {% endfor %}
+        
 {% endblock %}
 
 {% block postloadjs %}
