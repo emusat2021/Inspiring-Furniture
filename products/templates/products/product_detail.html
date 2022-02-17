@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,6 +14,7 @@
 {% endblock %}
 
 {% block content %}
+    {% include 'products/includes/base_stars.html' %}
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
@@ -52,6 +57,7 @@
                             </small>
                         </p>
                     {% endif %}
+                    <p>{% include 'products/includes/average_rating.html' %}</p>
                     <p class="mt-3">Description:{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
