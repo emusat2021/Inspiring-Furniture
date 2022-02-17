@@ -27,7 +27,7 @@ Inspiring Furniture offers different pieces of furniture in different designs. W
     - <a href="#ux-mockup">1.7 Mockup designs</a>
 - <a href="#information-architecture">2. Information Architecture</a>
     - <a href="#database">2.1 Database</a> 
-    - <a href="#er-diagram">2.2 ER Diagram </a>  
+    - <a href="#er-diagram">2.2 Entity-relationship Diagram </a>  
     - <a href="#data-modelling">2.3 Data Modelling</a>
 - <a href="#features">3. Features</a>
     - <a href="#features-existing">3.1 Existing features</a>
@@ -140,7 +140,7 @@ The images that are used for the project are from [NUS](https://cvml.comp.nus.ed
 
 <span id="ux-mockup"></span>
 
-### 1.5 Mockup designs
+### 1.7 Mockup designs
 [Balsamiq Wireframes tool](https://www.balsamiq.com/) was used to create all wireframes for the project.
 
 Original wireframes for desktop and mobile can be found [here](https://github.com/emusat2021/Inspiring-Furniture/tree/main/wireframes)
@@ -256,7 +256,7 @@ Entity-relationship diagram:
 
 <span id="data-modelling"></span>
 
-### 2.2 Data Modelling
+### 2.3 Data Modelling
 
 #### 1. Profile app 
 #### UserProfile model
