@@ -3,6 +3,7 @@
 from django import forms
 from .models import ContactMessage
 
+
 class ContactForm(forms.ModelForm):
     """
     A form for contact page
@@ -25,3 +26,8 @@ class ContactForm(forms.ModelForm):
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = False
+        # validate default_full_name to contain only letters
+        # https://stackoverflow.com/a/15472787
+        self.fields['full_name'].widget.attrs['pattern'] = '^[a-zA-Z_ ]*$'
+        # https://stackoverflow.com/a/47600422
+        self.fields['full_name'].widget.attrs['oninvalid'] = "setCustomValidity('Name must contain only letters and/or space.')"

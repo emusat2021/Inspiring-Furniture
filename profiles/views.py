@@ -5,8 +5,10 @@ from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
 from .models import UserProfile
 from .forms import UserProfileForm
+from . import functions
 from checkout.models import Order
 from products.models import Rating, Product
+
 
 @login_required
 def profile(request):
@@ -32,7 +34,6 @@ def profile(request):
     }
 
     return render(request, template, context)
-
 
 
 def order_history_list(request):
@@ -69,35 +70,7 @@ def order_history(request, order_number):
 @login_required
 def review_list(request):
     """ Display a list of unique purchased products for the current user. """
-    profile = get_object_or_404(UserProfile, user=request.user)
-    orders = profile.orders.all()
-    products_dict = {}
-    for order in orders:
-        for product_item in order.lineitems.all():
-            # build a dictionary with unique product id
-            # (for example, if user purchased same product on two different orders)
-            if product_item.product.pk not in products_dict.keys():
-                products_dict[product_item.product.pk] = product_item.product
-    ratings = Rating.objects.all()
-    
-    # searching for a rating in all ratings
-    # where the rating's product_id is equal to product's pk/id
-    # and the rating's user_id is equal to current user's id.
-    # if the rating is not found, then it is initialized with zero
-    for item_k, item_v in products_dict.items():
-        item_v.rating = 0
-        item_v.review_text = ""
-        item_v.rating_classes = []
-        for rating in ratings:
-            if rating.user_id_id == request.user.id and rating.product_id_id == item_v.pk:
-                item_v.rating = rating.number_of_stars
-                item_v.review_text = rating.review_text
-                for x in range(int(item_v.rating)):
-                    item_v.rating_classes.append("active")
-                for x in range(5 - int(item_v.rating)):
-                    item_v.rating_classes.append("inactive")
-
-
+    products_dict = functions.retrieve_purchased_products(request)
     template = 'profiles/review_list.html'
     context = {
         'products': products_dict,
@@ -112,6 +85,12 @@ def delete_review(request, product_id):
     if 'type' not in request.GET:
         return redirect(reverse('review_list'))
     type = request.GET["type"]
+
+    products_dict = functions.retrieve_purchased_products(request)
+    if product_id not in products_dict:
+        messages.warning(request, 'You are not allowed to delete the rating for this product until you purchased it!')
+        return redirect(reverse('review_list'))
+
     rating = get_object_or_404(Rating, product_id_id=product_id, user_id_id=request.user.id)
     if type == "rating":
         rating.number_of_stars = 0
@@ -136,6 +115,11 @@ def edit_review(request, product_id):
         number_of_stars = request.GET["number_of_stars"]
     if 'review_text' in request.GET:
         review_text = request.GET["review_text"]
+
+    products_dict = functions.retrieve_purchased_products(request)
+    if product_id not in products_dict:
+        messages.warning(request, 'You are not allowed to rate this product until you purchased it!')
+        return redirect(reverse('review_list'))
 
     # https://stackoverflow.com/questions/14255125/catching-doesnotexist-exception-in-a-custom-manager-in-django
     # try to find a record in the database for the current respective product_id and current user

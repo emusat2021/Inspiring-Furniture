@@ -21,10 +21,13 @@ def contact(request):
             user_email = contact_form.cleaned_data['email']
             try:
                 send_mail(
-                    f"Message from {full_name} <{user_email}>", # log line
-                    "You received a contact inquery", # message
+                    f"Message from {full_name} <{user_email}>",  # log line
+                    # message
+                    "You received a contact inquery from:\n" + \
+                    f"mailto:{user_email}\n" + \
+                    contact_form.cleaned_data['message'],
                     settings.EMAIL_HOST_USER,  # to
-                    [settings.DEFAULT_FROM_EMAIL], # from
+                    [settings.DEFAULT_FROM_EMAIL],  # from
                     fail_silently=False
                 )
                 messages.info(request, 'Your message has been received. We will contact you as soon as possible!')

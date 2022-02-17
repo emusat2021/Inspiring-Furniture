@@ -8,7 +8,6 @@ from .models import Product, Category, Rating
 from .forms import ProductForm
 
 
-
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -32,7 +31,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -43,7 +42,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -67,11 +66,12 @@ def all_products(request):
         product_ratings = [x.number_of_stars for x in ratings if x.product_id_id == product.pk]
         # if ratings were found, then calculate average_rating for the current product
         if len(product_ratings) != 0:
-            product.average_rating = str(sum(product_ratings) / len(product_ratings))
+            # convert decimal to 1 digit after point: https://stackoverflow.com/a/455634
+            product.average_rating = "{:.1f}".format(sum(product_ratings) / len(product_ratings))
             for item in range(round(float(product.average_rating))):
-                    product.rating_classes.append("active")
+                product.rating_classes.append("active")
             for item in range(5 - round(float(product.average_rating))):
-                    product.rating_classes.append("inactive")
+                product.rating_classes.append("inactive")
 
         products_with_ratings.append(product)
 
@@ -113,7 +113,7 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,

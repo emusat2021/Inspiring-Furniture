@@ -1,0 +1,40 @@
+<!-- Taken from https://github.com/irinatu17/Art-of-Tea -->
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}Contact{% endblock %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col mt-3"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="uppercase main-heading">How to Buy</h1>
+            <hr class="divider w-25 mt-3">
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-12 col-lg-5 ">
+            <img src="/media/info-how-to-buy.png" alt="how-to-buy">
+        </div>
+        <div class="col-12 col-lg-5 ">
+            <p>You can buy products both as an unregistered user and as a registered user.</p>
+            <p>You can only <strong>rate a product</strong> after you have purchased it as an <strong>Registered/Authenticated </strong>user.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %} 
+{% endblock %}
