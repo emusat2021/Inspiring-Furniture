@@ -44,33 +44,33 @@
                             <td style="vertical-align: top">
                                 {% if product_v.rating == 0 %}
                                     <p>Rate this product</p>
-                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=1">
+                                    <a href="{% url 'edit_rating' product_v.id %}?type=rating&number_of_stars=1">
                                         <svg class="c-icon inactive" width="32" height="32">
                                             <use href="#star"></use>
                                         </svg>
                                     </a>
-                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=2">
+                                    <a href="{% url 'edit_rating' product_v.id %}?type=rating&number_of_stars=2">
                                         <svg class="c-icon inactive" width="32" height="32">
                                         <use href="#star"></use>
                                         </svg>
                                     </a>
-                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=3">
+                                    <a href="{% url 'edit_rating' product_v.id %}?type=rating&number_of_stars=3">
                                         <svg class="c-icon inactive" width="32" height="32">
                                             <use href="#star"></use>
                                         </svg>
                                     </a>
-                                        <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=4">
+                                        <a href="{% url 'edit_rating' product_v.id %}?type=rating&number_of_stars=4">
                                         <svg class="c-icon inactive" width="32" height="32">
                                             <use href="#star"></use>
                                         </svg>
                                     </a>
-                                    <a href="{% url 'edit_review' product_v.id %}?type=rating&number_of_stars=5">
+                                    <a href="{% url 'edit_rating' product_v.id %}?type=rating&number_of_stars=5">
                                         <svg class="c-icon inactive" width="32" height="32">
                                             <use href="#star"></use>
                                         </svg>
                                     </a>
                                 {% else %}
-                                <p><a class="text-danger" href="{% url 'delete_review' product_v.id %}?type=rating">Clear rating</a></p>
+                                <p><a class="text-danger" href="{% url 'delete_rating' product_v.id %}?type=rating">Clear rating</a></p>
                                     {% for star in product_v.rating_classes %}
                                             <svg class="c-icon {{ star }}" width="32" height="32">
                                                 <use href="#star"></use>

@@ -80,7 +80,7 @@ def review_list(request):
 
 
 @login_required
-def delete_review(request, product_id):
+def delete_rating(request, product_id):
     """ Delete a rating or a review_text, given the product_id and 'type' argument """
     if 'type' not in request.GET:
         return redirect(reverse('review_list'))
@@ -104,7 +104,7 @@ def delete_review(request, product_id):
 
 
 @login_required
-def edit_review(request, product_id):
+def edit_rating(request, product_id):
     """ Edit a rating or a review_text, given the product_id and 'type' argument """
     if 'type' not in request.GET:
         return redirect(reverse('review_list'))
