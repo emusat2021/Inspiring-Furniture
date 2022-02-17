@@ -714,7 +714,6 @@ Read more about the the S3 Bucket storage [here](https://aws.amazon.com/s3/). Fo
 
 <h1>9. Disclaimer</h1>
 This project is for educational use only.
-Thanks for visiting
 
 <div align="right">
     <a href="#back_to_top">↥ Back to top!</a>
