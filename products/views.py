@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -93,6 +94,8 @@ def product_detail(request, product_id):
     ratings = Rating.objects.all()
     # find all ratings for the current product
     product_ratings = [x.number_of_stars for x in ratings if x.product_id_id == product.pk]
+    # find a list with all the reviews and the users that wrote those reviews
+    product.reviews = [{"user": User(x.user_id), "review_text": x.review_text} for x in ratings if x.product_id_id == product.pk]
     # if ratings were found, then calculate average_rating for the current product
     if len(product_ratings) != 0:
         # convert decimal to 1 digit after point: https://stackoverflow.com/a/455634
