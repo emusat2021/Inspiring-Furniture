@@ -89,7 +89,7 @@
                                     <button type="button" class="btn btn-info btn-small" data-toggle="modal" data-target="#editModal{{ product_v.id }}">
                                         Edit review
                                     </button>
-                                    <button type="button" class="btn btn-danger btn-small" data-toggle="modal" data-target="#editModal{{ product_v.id }}">
+                                    <button type="button" class="btn btn-danger btn-small" data-toggle="modal" data-target="#deleteModal{{ product_v.id }}">
                                         Delete review
                                     </button>
                                 {% endif %}
@@ -126,7 +126,35 @@
                 </div>
             </div>
             </div>
-    {% endfor %}
+
+        <!-- Delete review text Modal -->
+        <div class="modal fade" id="deleteModal{{ product_v.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModal{{ product_v.id }}Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModal{{ product_v.id }}Label">Delete review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete the review for '<strong>{{ product_v.name }}</strong>'?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <a href="{% url 'delete_review' product_v.id %}" class="btn btn-danger">Delete</a>
+                </div>
+                </form>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+        {% endfor %}
         
 {% endblock %}
 

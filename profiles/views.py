@@ -149,6 +149,22 @@ def edit_rating(request, product_id):
         messages.success(request, 'Review message deleted!')
     return redirect(reverse('review_list'))
 
+
+@login_required
+def delete_review(request, product_id):
+    """ Delete a review_text, given the product_id """
+    products_dict = functions.retrieve_purchased_products(request)
+    if product_id not in products_dict:
+        messages.warning(request, 'You are not allowed to delete the rating for this product until you purchased it!')
+        return redirect(reverse('review_list'))
+
+    review = get_object_or_404(Rating, product_id_id=product_id, user_id_id=request.user.id)
+    review.review_text = ""
+    review.save()
+    messages.success(request, 'Review message deleted!')
+    return redirect(reverse('review_list'))
+
+
 @login_required
 def edit_review(request, product_id):
     """ Edit a review_text, given the product_id """
