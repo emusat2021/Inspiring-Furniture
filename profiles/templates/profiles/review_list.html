@@ -41,7 +41,7 @@
                                 </a>
                             </td>
                             <td style="vertical-align: top">{{ product_v.name }}</td>
-                            <td style="vertical-align: top">
+                            <td style="vertical-align: top" class="pl-3">
                                 {% if product_v.rating == 0 %}
                                     <p>Rate this product</p>
                                     <a href="{% url 'edit_rating' product_v.id %}?type=rating&number_of_stars=1">
@@ -78,7 +78,7 @@
                                     {% endfor %}
                                 {% endif %}
                             </td>
-                            <td style="vertical-align: top">
+                            <td style="vertical-align: top" class="pl-3">
                                 {{ product_v.review_text }}
                                 <br>
                                 {% if product_v.review_text|length == 0 %}
