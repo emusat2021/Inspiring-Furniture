@@ -464,8 +464,7 @@ The website is classified by seven applications: home, products, contact, bag, c
 Product details:
 - People can only buy a product if the product is in stock. If the product isn't in stock, the content on the product detail page will say that the product is sold out and the page is referring to the contact page. 
 - Add a button to **login with an account** on the checkout page, where the personal and delivery information already exists to continue the payment process quickly. 
-- add a feature on the profile page so that the user can change the password and edit their email.
-- add functionality to reset the password on the login page
+- add a feature on the profile page so that the user can edit their email.
 - add service delivery information in the Info page
 - 'how to buy' content can be moved in the admin interface as a data model
 
