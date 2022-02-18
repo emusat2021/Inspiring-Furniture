@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -89,6 +90,20 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    product.rating_classes = []
+    ratings = Rating.objects.all()
+    # find all ratings for the current product
+    product_ratings = [x.number_of_stars for x in ratings if x.product_id_id == product.pk]
+    # find a list with all the reviews and the users that wrote those reviews
+    product.reviews = [{"user": User(x.user_id), "review_text": x.review_text} for x in ratings if x.product_id_id == product.pk]
+    # if ratings were found, then calculate average_rating for the current product
+    if len(product_ratings) != 0:
+        # convert decimal to 1 digit after point: https://stackoverflow.com/a/455634
+        product.average_rating = "{:.1f}".format(sum(product_ratings) / len(product_ratings))
+        for item in range(round(float(product.average_rating))):
+            product.rating_classes.append("active")
+        for item in range(5 - round(float(product.average_rating))):
+            product.rating_classes.append("inactive")
 
     context = {
         'product': product,

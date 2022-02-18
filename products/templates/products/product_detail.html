@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,6 +14,7 @@
 {% endblock %}
 
 {% block content %}
+    {% include 'products/includes/base_stars.html' %}
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
@@ -45,10 +50,18 @@
                     {% if request.user.is_superuser %}
                         <p class="mt-1 mb-0">
                             <small class="ml-3">
-                                <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                <a href="{% url 'edit_product' product.id %}" class="btn btn-info">Edit</a>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+                                Delete
+                                </button>
                             </small>
                         </p>
+                    {% endif %}
+                    <p>{% include 'products/includes/average_rating.html' %}</p>
+                    {% if product.reviews|length == 0 %}
+                        <span class="lead text-cust"> This product has no reviews yet</span>
+                    {% else %}
+                        <a href="#all_reviews" class="lead text-cust text-decoration-none"> Read all {{product.reviews|length}} reviews</a>
                     {% endif %}
                     <p class="mt-3">Description:{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
@@ -95,7 +108,39 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <p id="all_reviews" class="lead text-cust">Reviews</p>
+                {% for review in product.reviews %}
+                    <p>User <strong>{{ review.user.id.username }}</strong> opinion:</p>
+                    <p>{{ review.review_text }}</p>
+                    <hr>
+                {% endfor %}
+             </div>
+        </div>
     </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="deleteModalLabel">Delete product</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Are you sure you want to delete '<span class="font-weight-bold">{{ product.name }}</span>' with id '{{ product.id }}'?
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <a href="{% url 'delete_product' product.id %}" class="btn btn-danger">Delete</a>
+        </div>
+        </div>
+    </div>
+    </div>
+
 {% endblock %}
 
 {% block postloadjs %}

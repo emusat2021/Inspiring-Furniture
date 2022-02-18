@@ -41,3 +41,11 @@ class UserProfileForm(forms.ModelForm):
         # validate phone number to contain only numbers and the plus sign
         self.fields['default_phone_number'].widget.attrs['pattern'] = '[0-9\+]+'
         self.fields['default_phone_number'].widget.attrs['oninvalid'] = "setCustomValidity('Telephone number must contain only digits and/or plus. No other characters are allowed.')"
+
+
+class ReviewsForm(forms.Form):
+    """
+    This form is used to send a review text
+    It is not connected to a data model
+    """
+    review_text = forms.CharField(widget=forms.Textarea(attrs={"rows": 7, "cols": 50}))

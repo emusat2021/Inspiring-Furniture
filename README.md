@@ -99,7 +99,7 @@ Inspiring Furniture offers different pieces of furniture in different designs. W
 - As a registered user, I want to receive an email confirmation after registering in my new account, to be able to authenticat my self.
 - As a registered user, I want to edit my profile, to be able to view my profile updated.
 - As a registered user, I want to edit my profile, to be able toaccess my order history.
-- As a registered user, I want to easily recover my  password if forget it, to be able to use my account.
+- As a registered user, I want to reset/change my password (if I forgot it), so I can get access to my profile.
 
 **Consumer goals:** 
 
@@ -365,7 +365,7 @@ The website is classified by seven applications: home, products, contact, bag, c
     - The search results are displayed on the products page. 
     - On the product page, a message will appear with '0 Products found' if there are no search results.
 - The navbar contains the **Login** and **Register** links, where people can login or register.
-- After the user is authenticated, the navbar contains **My Account** and **Logout** links. **My Account** contains My Profile, Order History and My Reviews.
+- After the user is authenticated, the navbar contains **My Account** and **Logout** links. **My Account** contains My Profile, Change password, Order History and My Reviews.
 - The navbar contains the **shopping bag**, where users can see the items they have put in the order. The basket redirects to the order summary. 
 - The navbar is visible as a **hamburger menu** on mobile devices. 
 
@@ -425,6 +425,10 @@ The website is classified by seven applications: home, products, contact, bag, c
 - This page is available to authenticated users only
 - There is a **Default Delivery Information** (country, postal code, town/city, county, street address 1 and street address 2. Users can **edit this information** also. 
 
+#### 10. The Change password page
+- This page is available to authenticated users only
+- The user can change the password
+
 #### 10. The order history page 
 - This page is available to authenticated users only
 - There is an **order history** page (order number, date of order, items, quantity and total) 
@@ -442,7 +446,8 @@ The website is classified by seven applications: home, products, contact, bag, c
 - **Sign up**
     - Users can create a new account by filling in a form where the user have to fill in an email, username, password and password confirmation. If the info already exists, there will be a message that he/she already has an account. The user can submit the form when the data is new. A verification email is sent to the user.
 - **Login**
-    - Users can login with their username ans password.
+    - Users can login with their username and password.
+    - A user can reset its own password.
 - **Logout** 
     - The user can logout by clicking the logout link. After clicking the link there will be a confirmation if the user is sure to logout. 
 
@@ -459,8 +464,7 @@ The website is classified by seven applications: home, products, contact, bag, c
 Product details:
 - People can only buy a product if the product is in stock. If the product isn't in stock, the content on the product detail page will say that the product is sold out and the page is referring to the contact page. 
 - Add a button to **login with an account** on the checkout page, where the personal and delivery information already exists to continue the payment process quickly. 
-- add a feature on the profile page so that the user can change the password and edit their email.
-- add functionality to reset the password on the login page
+- add a feature on the profile page so that the user can edit their email.
 - add service delivery information in the Info page
 - 'how to buy' content can be moved in the admin interface as a data model
 
