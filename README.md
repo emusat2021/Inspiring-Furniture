@@ -11,7 +11,7 @@ At Inspiring Furniture, we have the latest sofas, tables and chairs, with many d
 Inspiring Furniture offers different pieces of furniture in different designs. We offer inspiration in interiors and design, whether the furniture is for a small hallway, an office or an entire home. 
 
 
-**View the live project [here](https://inspiring-furniture.herokuapp.com/).**
+**View the live project [here](https://inspiring-furniture.onrender.com/).**
 
 ---
 
@@ -34,7 +34,7 @@ Inspiring Furniture offers different pieces of furniture in different designs. W
     - <a href="#features-future">3.2 Features left to implement in the future</a>
 - <a href="#technologies">4. Technologies used</a>
 - <a href="#testing">5. Testing</a>
-- <a href="#deployment">6. Deployment</a>
+- <a href="#deployment">6. Deployment(Heroku was replaced with Render. Please see info about all updates and instructions)</a>
 - <a href="#credits">7. Credits</a>
 - <a href="#Acknowledge">8. Acknowledge</a>
 - <a href="#Acknowledge">9. Disclaimer</a>
@@ -508,7 +508,7 @@ Product details:
 - [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
     - Boto3 is used for compatibility in AWS.
 - [Gunicorn](https://pypi.org/project/gunicorn/)
-    - Gunicorn is used to enable deployment to Heroku.
+    - Gunicorn is used to enable deployment to Heroku.(Heroku was replaced with Render. Please see info about all updates and instructions)
 - [Spycopg2](https://pypi.org/project/gunicorn/)
     - Spycopg2 is used to enable the PostGreSQL database to connect with Django.
 - [Google Fonts](https://fonts.google.com/)
@@ -603,7 +603,7 @@ To make a local clone, follow the following steps.
 7. To acces the admin environment, you can add `/admin` at the end of your url and login with the superuser.
 
 
-#### Heroku Deployment  
+#### Heroku Deployment(Heroku was replaced with Render. Please see info about all updates and instructions)  
 1. Set up local workspace for Heroku 
     - In terminal window of your IDE type: `pip3 freeze -- local > requirements.txt.` (The file is needed for Heroku to know which files to install.)
     - Create a Procfile with the following text: `web: gunicorn <name app>.wsgi:application` (The file is needed for Heroku to know which file is needed as an entry point.)
@@ -660,6 +660,8 @@ To make a local clone, follow the following steps.
     - Set automatic deploment: Go to the deploy tab in Heroku and scroll down to **Aotmatic deployments**. Click on **Enable Automatic Deploys**. By **Manual deploy** click on **Deploy Branch**.
 Heroku will receive the code from Github and host the app using the required packages. 
 Click on **Open app** in the right corner of your Heroku account. The app wil open and the live link is available from the address bar. 
+5. Heroku was replaced with Render. Please see info about all updates and instructions [here](DEPLOYMENT-RENDER.md).
+
 
 #### Hosting static and media files with AWS
 The static and media files are hosted in the AWS S3 Bucket. To host them you will need an account and create an S3 bucket and set a group, policy and user in the IAM environment. 
